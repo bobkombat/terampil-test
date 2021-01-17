@@ -1,14 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import logo from '../../logo.svg';
+import '../../App.css';
+import '../../index.css';
 
-function App() {
+export default function HomePage() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <h1>Edit src/App.js and save to reload.</h1>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -21,5 +21,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

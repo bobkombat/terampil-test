@@ -1,17 +1,38 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import FontFaceObserver from 'fontfaceobserver';
+
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import App from 'pages/App';
+
+// Loading font async and checking the font cache
+const archivoObserver = new FontFaceObserver('Archivo', {});
+const OpenSansOberserver = new FontFaceObserver('Open Sans', {});
+const interObserver = new FontFaceObserver('Inter', {});
+const html = document.documentElement;
+
+if (sessionStorage.fontsLoaded) {
+  html.classList.add('root-fonts-loaded');
+  html.classList.remove('root-fonts-loading');
+} else {
+  html.classList.add('root-fonts-loading');
+
+  Promise.all([archivoObserver.load(), OpenSansOberserver.load(), interObserver.load()])
+    .then(() => {
+      sessionStorage.fontsLoaded = true;
+      console.log('All fonts loaded');
+
+      html.classList.remove('root-fonts-loading');
+      html.classList.add('root-fonts-loaded');
+    })
+    .catch(() => {
+      sessionStorage.fontsLoaded = false;
+    });
+}
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
