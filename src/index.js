@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import FontFaceObserver from 'fontfaceobserver';
+import { ThemeProvider } from 'styled-components';
 
+import { globalTheme } from 'assets/styles/theme';
 import './index.css';
 import App from 'pages/App';
 
@@ -32,7 +34,9 @@ if (sessionStorage.fontsLoaded) {
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={globalTheme}>
+      <App />
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root'),
 );

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import PageLayout from 'components/organisms/PageLayout';
+import Button from 'components/atoms/Button';
 
 import logo from '../../logo.svg';
 import './App.css';
@@ -20,7 +21,7 @@ export default function HomePage() {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1>Edit src/App.js and save to reload.</h1>
+          <h1>Learn anytime, anywhere, at your own pace.</h1>
           <a
             className="App-link"
             href="https://reactjs.org"
@@ -29,6 +30,18 @@ export default function HomePage() {
           >
             Learn React
           </a>
+          <Button primary large>
+            View Plan
+          </Button>
+          <Button secondary large>
+            Start Free Trial
+          </Button>
+          <Button primary medium>
+            Daftar
+          </Button>
+          <Button secondary medium>
+            Masuk
+          </Button>
         </header>
       </div>
     </PageLayout>
