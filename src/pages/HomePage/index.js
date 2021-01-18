@@ -1,11 +1,12 @@
 import React from 'react';
-
 import PageLayout from 'components/organisms/PageLayout';
 import Button from 'components/atoms/Button';
 
 import logo from '../../logo.svg';
 import './App.css';
 import '../../index.css';
+import InputComponent from 'components/atoms/Input/Input';
+import Headers from 'components/organisms/Headers';
 
 export default function HomePage() {
   // SEO metadata
@@ -18,6 +19,7 @@ export default function HomePage() {
 
   return (
     <PageLayout seo={seo}>
+      {/* <Headers /> */}
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
@@ -45,6 +47,7 @@ export default function HomePage() {
           <Button primary large>
             Mulai berlangganan
           </Button>
+          <InputComponent />
         </header>
       </div>
     </PageLayout>
