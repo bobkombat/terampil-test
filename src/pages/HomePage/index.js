@@ -5,8 +5,12 @@ import Button from 'components/atoms/Button';
 import logo from '../../logo.svg';
 import './App.css';
 import '../../index.css';
+<<<<<<< HEAD
 import InputComponent from 'components/atoms/Input/Input';
 import Headers from 'components/organisms/Headers';
+=======
+import Dropdown from 'components/atoms/Dropdown';
+>>>>>>> a474ec99f9f51428b50458dff4e4149d849e061d
 
 export default function HomePage() {
   // SEO metadata
@@ -47,7 +51,11 @@ export default function HomePage() {
           <Button primary large>
             Mulai berlangganan
           </Button>
+<<<<<<< HEAD
           <InputComponent />
+=======
+          <Dropdown>Kategori</Dropdown>
+>>>>>>> a474ec99f9f51428b50458dff4e4149d849e061d
         </header>
       </div>
     </PageLayout>

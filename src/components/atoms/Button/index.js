@@ -6,8 +6,13 @@ function Button({ children, ...rest }) {
   return <ButtonStyled {...rest}>{children}</ButtonStyled>;
 }
 
-PropTypes.ButtonComponent = {
-  children: PropTypes.element.isRequired,
+Button.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+    PropTypes.object,
+    PropTypes.element,
+  ]),
 };
 
 export default Button;
