@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ButtonProps } from 'utils/propsComponent';
+import { ButtonProps } from 'components/atoms/Button/propsComponent';
 
 const ButtonStyled = styled.button.attrs((props) => ({
   color: ButtonProps.checkButtonColor(props),
