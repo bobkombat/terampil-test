@@ -6,6 +6,7 @@ import Button from 'components/atoms/Button';
 import logo from '../../logo.svg';
 import './App.css';
 import '../../index.css';
+import Dropdown from 'components/atoms/Dropdown';
 
 export default function HomePage() {
   // SEO metadata
@@ -45,6 +46,7 @@ export default function HomePage() {
           <Button primary large>
             Mulai berlangganan
           </Button>
+          <Dropdown>Kategori</Dropdown>
         </header>
       </div>
     </PageLayout>

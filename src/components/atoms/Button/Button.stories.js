@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from './';
 
-export default {
+const story = {
   title: 'Form/Button',
   component: Button,
 };
@@ -14,3 +14,5 @@ export const Secondary = () => (
   </Button>
 );
 export const Rounded = () => <Button rounded> Login</Button>;
+
+export default story;
