@@ -42,6 +42,9 @@ export default function HomePage() {
           <Button secondary medium>
             Masuk
           </Button>
+          <Button primary large>
+            Mulai berlangganan
+          </Button>
         </header>
       </div>
     </PageLayout>
