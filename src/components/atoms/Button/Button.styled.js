@@ -24,6 +24,7 @@ const ButtonStyled = styled.button.attrs((props) => ({
   letter-spacing: normal;
   text-align: center;
   margin: 5px;
+  cursor: pointer;
 `;
 
 export default ButtonStyled;
