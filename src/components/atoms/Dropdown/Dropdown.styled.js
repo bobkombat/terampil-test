@@ -12,7 +12,7 @@ const StyledDropdown = styled.div`
   .dropdown {
     position: relative;
     padding: 16px 8px;
-    background: aqua;
+    /* background-col: #00004; */
   }
 
   .dropdown-content {
