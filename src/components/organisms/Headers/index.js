@@ -14,7 +14,6 @@ function Headers(props) {
     <>
       <Header {...rest}>
         <Image src={LogoHeader} alt="logo" />
-        {/* <LogoHeader /> */}
         <Dropdown>Kategori</Dropdown>
         <InputComponent />
         <div className="header-link">

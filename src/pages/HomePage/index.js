@@ -8,6 +8,7 @@ import '../../index.css';
 import InputComponent from 'components/atoms/Input/Input';
 import Headers from 'components/organisms/Headers';
 import Dropdown from 'components/atoms/Dropdown';
+import Collaboration from 'components/organisms/InCollaboration';
 
 export default function HomePage() {
   // SEO metadata
@@ -49,6 +50,9 @@ export default function HomePage() {
             Mulai berlangganan
           </Button>
           <InputComponent />
+
+          <Dropdown>Kategori</Dropdown>
+          <Collaboration />
         </header>
       </div>
     </PageLayout>
