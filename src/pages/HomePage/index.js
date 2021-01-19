@@ -34,6 +34,7 @@ export default function HomePage() {
           >
             Learn React
           </a>
+          <Dropdown>Kategori</Dropdown>
           <Button primary large>
             View Plan
           </Button>
@@ -51,7 +52,10 @@ export default function HomePage() {
           </Button>
           <InputComponent />
           <Dropdown>Kategori</Dropdown>
+<<<<<<< HEAD
           <Collaboration />
+=======
+>>>>>>> 1dbe68b1df3d45e17b6ed990b064257f6730c134
         </header>
       </div>
     </PageLayout>
