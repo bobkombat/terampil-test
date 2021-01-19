@@ -8,6 +8,7 @@ import '../../index.css';
 import InputComponent from 'components/atoms/Input/Input';
 import Headers from 'components/organisms/Headers';
 import Dropdown from 'components/atoms/Dropdown';
+import {TagLine} from "../../components/organisms/TagLine";
 
 export default function HomePage() {
   // SEO metadata
@@ -23,8 +24,9 @@ export default function HomePage() {
       {/* <Headers /> */}
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1>Learn anytime, anywhere, at your own pace.</h1>
+          {/*<img src={logo} className="App-logo" alt="logo" />*/}
+          {/*<h1>Learn anytime, anywhere, at your own pace.</h1>*/}
+          <TagLine />
           <a
             className="App-link"
             href="https://reactjs.org"
