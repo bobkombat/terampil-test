@@ -26,14 +26,6 @@ export default function HomePage() {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1>Learn anytime, anywhere, at your own pace.</h1>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
           <Button primary large>
             View Plan
           </Button>

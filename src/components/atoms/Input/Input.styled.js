@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { mq } from 'assets/styles/theme';
 
 const Search = styled.div`
   width: 36vw;
@@ -31,9 +32,9 @@ const Search = styled.div`
     padding: 3px 20.5px 3px 2.5px;
   }
 
-  @media screen and (max-width: 1439px) {
-    width: 24vw;
-  }
+  ${mq({
+    width: [null, '30vw', '24vw', '20vw', '20vw'],
+  })}
 `;
 
 export default Search;
