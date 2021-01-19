@@ -24,22 +24,18 @@ function Dropdown({ children, ...rest }) {
         </div>
         <div className="dropdown-content">
           <div className="first-content">
-            <div align="left" className="dropdown-header mb">
-              Kategori
-            </div>
-            <div className="dropdown-content-1 mb">Komunikasi</div>
-            <div className="dropdown-content-1 mb">Komunikasi</div>
-            <div className="dropdown-content-1 mb">Komunikasi</div>
-            <div className="dropdown-content-1 mb">Komunikasi</div>
-            <div className="dropdown-content-1 mb">Komunikasi</div>
-            <div className="dropdown-content-1 mb">Komunikasi</div>
+            <p className="dropdown-content-1 mb">Entrepreneurship</p>
+            <p className="dropdown-content-1 mb">Marketing &amp; Sales</p>
+            <p className="dropdown-content-1 mb">Communication</p>
+            <p className="dropdown-content-1 mb">IT &amp; Software Development</p>
+            <p className="dropdown-content-1 mb">Personal Development</p>
+            <p className="dropdown-content-1 mb">Design Graphic &amp; Video Editor</p>
           </div>
-          <div className="separator"></div>
           <div className="second-content">
-            <div className="dropdown-content-2 mb">Semua Kelas</div>
-            <div className="dropdown-content-2 mb">Rekomendasi</div>
-            <div className="dropdown-content-2 mb">Semua Kelas</div>
-            <div className="dropdown-content-2 mb">Semua Kelas</div>
+            <p className="dropdown-content-2 mb">Semua Kelas</p>
+            <p className="dropdown-content-2 mb">Rekomendasi</p>
+            <p className="dropdown-content-2 mb">Semua Kelas</p>
+            <p className="dropdown-content-2 mb">Semua Kelas</p>
           </div>
         </div>
       </div>

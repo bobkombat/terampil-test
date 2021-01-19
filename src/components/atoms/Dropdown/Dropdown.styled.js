@@ -12,22 +12,22 @@ const StyledDropdown = styled.div`
   .dropdown {
     position: relative;
     padding: 16px 8px;
-    background: aqua;
   }
 
   .dropdown-content {
+    float: left;
     position: absolute;
     display: flex;
     transition: all 0.2s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
     visibility: hidden;
     opacity: 0;
     background-color: #202020;
-    padding: 32px 32px 16px 32px;
-    width: 360px;
+    padding: 32px 32px 18px 32px;
     transform: translateY(1.2em);
     border-radius: 5px;
     top: 20px;
     left: -4px;
+    --mw: inherit;
   }
 
   .dropdown:hover .dropdown-content {
@@ -46,26 +46,17 @@ const StyledDropdown = styled.div`
     transition: all 0.25s ease-in-out;
   }
 
-  .dropdown-header {
-    display: inline-block;
-    float: left;
+  .first-content {
+    padding-top: 1px;
     text-align: left;
-    font-family: 'Archivo', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    padding-bottom: 8px;
-    border-bottom: solid 1px #00debf;
+    border-right: 1px solid #c4c4c4;
+    padding-right: 24px;
+    margin-right: 24px;
+    white-space: nowrap;
   }
 
-  .mb {
-    margin-bottom: 24px;
-  }
-
-  .separator {
-    width: 1px;
-    height: 290px;
-    background-color: #626262;
-    margin: 0 60px;
+  .second-content {
+    text-align: left;
   }
 
   .dropdown-content-1 {
@@ -73,6 +64,7 @@ const StyledDropdown = styled.div`
     font-size: 16px;
     font-weight: 400;
     color: #c4c4c4;
+    margin: 0 0 24px 0;
   }
 
   .dropdown-content-2 {
@@ -80,6 +72,7 @@ const StyledDropdown = styled.div`
     font-size: 18px;
     font-weight: 500;
     color: #c4c4c4;
+    margin: 0 0 24px 0;
   }
 `;
 
