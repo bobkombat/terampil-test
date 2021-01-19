@@ -33,7 +33,6 @@ export default function HomePage() {
           >
             Learn React
           </a>
-          <Dropdown>Kategori</Dropdown>
           <Button primary large>
             View Plan
           </Button>
