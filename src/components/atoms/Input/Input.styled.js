@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-export const Search = styled.div`
-  width: 340px;
+const Search = styled.div`
+  width: 36vw;
   height: 48px;
-  margin: 0 71px 0 30px;
+  margin: 0 30px 0 30px;
   padding: 8px 10px 10px 16px;
   border-radius: 5px;
   background-color: #23272f;
@@ -11,7 +11,7 @@ export const Search = styled.div`
   font-size: 14px;
   font-weight: 300;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   box-sizing: border-box;
 
@@ -30,4 +30,10 @@ export const Search = styled.div`
     margin: 0;
     padding: 3px 20.5px 3px 2.5px;
   }
+
+  @media screen and (max-width: 1439px) {
+    width: 24vw;
+  }
 `;
+
+export default Search;

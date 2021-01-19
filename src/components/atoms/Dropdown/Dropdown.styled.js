@@ -6,7 +6,9 @@ const StyledDropdown = styled.div`
   font-size: 16px;
 
   .kategori {
+    display: flex;
     cursor: pointer;
+    align-items: center;
   }
 
   .dropdown {

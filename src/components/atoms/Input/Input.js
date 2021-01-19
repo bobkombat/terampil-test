@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Search } from './Input.styled';
+import Search from './Input.styled';
 import SearchIcon from '../../../assets/png/Search.png';
 
 function InputComponent(props) {

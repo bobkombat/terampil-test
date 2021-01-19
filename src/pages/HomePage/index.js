@@ -33,7 +33,6 @@ export default function HomePage() {
           >
             Learn React
           </a>
-          <Dropdown>Kategori</Dropdown>
           <Button primary large>
             View Plan
           </Button>
@@ -50,7 +49,6 @@ export default function HomePage() {
             Mulai berlangganan
           </Button>
           <InputComponent />
-          <Dropdown>Kategori</Dropdown>
         </header>
       </div>
     </PageLayout>
