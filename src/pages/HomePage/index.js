@@ -8,7 +8,8 @@ import '../../index.css';
 import InputComponent from 'components/atoms/Input/Input';
 import Headers from 'components/organisms/Headers';
 import Dropdown from 'components/atoms/Dropdown';
-import Collaboration from 'components/organisms/InCollaboration';
+import Collaboration from 'components/organisms/Collaboration';
+import PopularTrainer from 'components/organisms/PopularTrainer/PopularTrainer';
 
 export default function HomePage() {
   // SEO metadata
@@ -52,10 +53,8 @@ export default function HomePage() {
           </Button>
           <InputComponent />
           <Dropdown>Kategori</Dropdown>
-<<<<<<< HEAD
           <Collaboration />
-=======
->>>>>>> 1dbe68b1df3d45e17b6ed990b064257f6730c134
+          <PopularTrainer />
         </header>
       </div>
     </PageLayout>

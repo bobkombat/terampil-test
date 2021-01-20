@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Container, Image } from './Collaboration.styled';
+import { Container, Image, Text } from './Collaboration.styled';
 import GoogleIcon from '../../../assets/png/image1.png';
 import IBMIcon from '../../../assets/png/image 2.png';
 import UiIcon from '../../../assets/png/image 3.png';
@@ -21,9 +21,9 @@ function Collaboration(props) {
   return (
     <Container>
       <div>
-        <h4>
-          <span>Kita berkaloborasi dengan </span> Pemimpin Industri & Universitas Terbaik
-        </h4>
+        <Text>
+          Kita berkaloborasi dengan <span> Pemimpin Industri & Universitas Terbaik</span>
+        </Text>
       </div>
       <div className="image-icon">
         {iconColaboratin.map((item, index) => {
