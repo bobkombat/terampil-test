@@ -2,12 +2,8 @@ import React from 'react';
 import PageLayout from 'components/organisms/PageLayout';
 import Button from 'components/atoms/Button';
 
-import logo from '../../logo.svg';
-import './App.css';
 import '../../index.css';
-import InputComponent from 'components/atoms/Input/Input';
 import Headers from 'components/organisms/Headers';
-import Dropdown from 'components/atoms/Dropdown';
 import Collaboration from 'components/organisms/InCollaboration';
 
 export default function HomePage() {
@@ -21,32 +17,25 @@ export default function HomePage() {
 
   return (
     <PageLayout seo={seo}>
-      {/* <Headers /> */}
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1>Learn anytime, anywhere, at your own pace.</h1>
-          <Button primary large>
-            View Plan
-          </Button>
-          <Button secondary large>
-            Start Free Trial
-          </Button>
-          <Button primary medium>
-            Daftar
-          </Button>
-          <Button secondary medium>
-            Masuk
-          </Button>
-          <Button primary large>
-            Mulai berlangganan
-          </Button>
-          <InputComponent />
+      <Headers />
+      <h1>Learn anytime, anywhere, at your own pace.</h1>
+      <Button primary large>
+        View Plan
+      </Button>
+      <Button secondary large>
+        Start Free Trial
+      </Button>
+      <Button primary medium>
+        Daftar
+      </Button>
+      <Button secondary medium>
+        Masuk
+      </Button>
+      <Button primary large>
+        Mulai berlangganan
+      </Button>
 
-          <Dropdown>Kategori</Dropdown>
-          <Collaboration />
-        </header>
-      </div>
+      <Collaboration />
     </PageLayout>
   );
 }

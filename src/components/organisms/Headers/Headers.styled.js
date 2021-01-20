@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import { mq } from 'assets/styles/theme';
 
-export const Header = styled.div`
+export const Header = styled.header`
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   height: 77px;
   padding: 15px 100px 14px 100px;
   background-color: #000004;
@@ -13,14 +13,14 @@ export const Header = styled.div`
   align-items: center;
   justify-content: space-between;
   align-items: center;
+  -webkit-backface-visibility: hidden;
 
   & > div {
     display: flex;
   }
 
   .header-link {
-    width: 190px;
-    display: flex;
+    min-width: 180px;
     justify-content: space-between;
     align-items: center;
     margin: 0 10px;
@@ -34,6 +34,9 @@ export const Header = styled.div`
       '15px 30px 14px 30px',
       '15px 10px 14px 10px',
     ],
+    '.header-link': {
+      minWidth: ['180px', null, null, '160px'],
+    },
   })}
 `;
 

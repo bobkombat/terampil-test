@@ -14,6 +14,7 @@ export const globalTheme = {
 export const mq = facepaint([
   '@media screen and (max-width: 1441px)',
   '@media screen and (max-width: 1201px)',
+  '@media screen and (max-width: 993px)',
   '@media screen and (max-width: 769px)',
   '@media screen and (max-width: 577px)',
 ]);

@@ -32,16 +32,22 @@ const ButtonStyled = styled.button.attrs((props) => ({
   cursor: pointer;
 
   ${mq({
-    width: [null, null, null, 'calc(var(--var-width) - 30px)', 'calc(var(--var-width) - 50px)'],
-    height: [null, null, null, null, 'calc(var(--var-height) - 5px)'],
+    width: [
+      null,
+      null,
+      'calc(var(--var-width) - 50px)',
+      'calc(var(--var-width) - 65px)',
+      'calc(var(--var-width) - 70px)',
+    ],
+    height: [null, null, null, 'calc(var(--var-height) - 3px)', 'calc(var(--var-height) - 5px)'],
     fontSize: [
       null,
       null,
-      null,
       'calc(var(--var-fontsize) - 3px)',
+      'calc(var(--var-fontsize) - 4px)',
       'calc(var(--var-fontsize) - 5px)',
     ],
-    padding: [null, null, null, '10px'],
+    padding: [null, null, '10px', '5px'],
   })}
 `;
 
