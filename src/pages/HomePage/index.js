@@ -25,37 +25,36 @@ export default function HomePage() {
       {/* <Headers /> */}
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1>Learn anytime, anywhere, at your own pace.</h1>
+          {/*<h1>Learn anytime, anywhere, at your own pace.</h1>*/}
           {/*<img src={logo} className="App-logo" alt="logo" />*/}
           {/*<h1>Learn anytime, anywhere, at your own pace.</h1>*/}
           <TagLine />
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          <Button primary large>
-            View Plan
-          </Button>
-          <Button secondary large>
-            Start Free Trial
-          </Button>
-          <Button primary medium>
-            Daftar
-          </Button>
-          <Button secondary medium>
-            Masuk
-          </Button>
-          <Button primary large>
-            Mulai berlangganan
-          </Button>
-          <InputComponent />
+          {/*<a*/}
+          {/*  className="App-link"*/}
+          {/*  href="https://reactjs.org"*/}
+          {/*  target="_blank"*/}
+          {/*  rel="noopener noreferrer"*/}
+          {/*>*/}
+          {/*  Learn React*/}
+          {/*</a>*/}
+          {/*<Button primary large>*/}
+          {/*  View Plan*/}
+          {/*</Button>*/}
+          {/*<Button secondary large>*/}
+          {/*  Start Free Trial*/}
+          {/*</Button>*/}
+          {/*<Button primary medium>*/}
+          {/*  Daftar*/}
+          {/*</Button>*/}
+          {/*<Button secondary medium>*/}
+          {/*  Masuk*/}
+          {/*</Button>*/}
+          {/*<Button primary large>*/}
+          {/*  Mulai berlangganan*/}
+          {/*</Button>*/}
+          {/*<InputComponent />*/}
 
-          <Dropdown>Kategori</Dropdown>
+          {/*<Dropdown>Kategori</Dropdown>*/}
           <Collaboration />
         </header>
       </div>

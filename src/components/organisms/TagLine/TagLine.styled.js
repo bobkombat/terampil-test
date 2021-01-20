@@ -57,3 +57,34 @@ export const ButtonTagLineContainer = styled.div`
     flex-direction: column;
   }
 `
+
+export const ImageBackground = styled.img`
+  src: url(${props => props.src});
+  height: 355px;
+  width: 242px;
+  pointer-events: none;
+  position: absolute;
+  z-index: 0;
+  right: 470px;
+  top: 164px;
+
+  @media screen and (max-width: 1366px) {
+    height: 355px;
+    width: 242px;
+    right: 180px;
+    top: 164px;
+  }
+  
+  @media screen and (max-width: 800px) {
+    height: 240px;
+    width: 165px;
+    right: 50px;
+    top: 120px;
+  }
+  @media screen and (max-width: 438px) {
+    height: 180px;
+    width: 120px;
+    right: 15px;
+    top: 90px;
+  }
+`
