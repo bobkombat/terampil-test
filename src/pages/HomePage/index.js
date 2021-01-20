@@ -2,10 +2,7 @@ import React from 'react';
 import PageLayout from 'components/organisms/PageLayout';
 import Button from 'components/atoms/Button';
 
-import logo from '../../logo.svg';
-import './App.css';
 import '../../index.css';
-import InputComponent from 'components/atoms/Input/Input';
 import Headers from 'components/organisms/Headers';
 import Dropdown from 'components/atoms/Dropdown';
 import Collaboration from 'components/organisms/Collaboration';

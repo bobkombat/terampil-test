@@ -1,3 +1,6 @@
+import facepaint from 'facepaint';
+
+// Global Theme Variable
 export const globalTheme = {
   color: {
     primary: '#00debf',
@@ -6,3 +9,12 @@ export const globalTheme = {
     white: '#fdfdfd',
   },
 };
+
+// Media query template
+export const mq = facepaint([
+  '@media screen and (max-width: 1441px)',
+  '@media screen and (max-width: 1281px)',
+  '@media screen and (max-width: 993px)',
+  '@media screen and (max-width: 769px)',
+  '@media screen and (max-width: 577px)',
+]);

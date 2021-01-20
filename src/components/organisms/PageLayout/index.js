@@ -11,7 +11,7 @@ const PageLayout = ({ seo, children }) => {
       <Helmet defaultTitle={`Terampil${title ? ` \u2022 ${title}` : ''}`}>
         <meta name="description" description={description} />
       </Helmet>
-      <Headers />
+      {/* <Headers /> */}
       {children}
     </React.Fragment>
   );

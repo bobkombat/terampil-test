@@ -2,7 +2,7 @@ import React from 'react';
 import Button from './';
 
 const story = {
-  title: 'Form/Button',
+  title: 'Atom/Button',
   component: Button,
 };
 
