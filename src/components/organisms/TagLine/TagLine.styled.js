@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {mq} from "../../../assets/styles/theme";
 
 export const TagLineStyled = styled.h1`
   width: 800px;
@@ -10,18 +11,16 @@ export const TagLineStyled = styled.h1`
   margin-top: 96px;
   margin-right: 288px;
   margin-left: 288px;
-  @media screen and (max-width: 800px) {
-    font-size: 40px;
-    width: 500px;
-    margin-right: 64px;
-    margin-left: 64px;
-  }
-  @media screen and (max-width: 438px) {
-    font-size: 24px;
-    width: 300px;
-    margin-right: 8px;
-    margin-left: 8px;
-  }
+  background-color: #a52a2a;
+
+  ${mq({
+    fontSize: [
+      '90px', '60px', '40px', '24px',
+    ],
+    width: ['1200px', '800px', '500px', '300px'],
+    marginLeft: [null, null, '64px', '24px'],
+    marginRight: [null, null, '64px', '24px'],
+  })};
 `
 export const Container = styled.div`
   display: flex;
@@ -29,24 +28,24 @@ export const Container = styled.div`
   width: 100%;
   align-items: center;
   justify-content: center;
+  background-color: blue;
 `
 
 export const SubTagLine = styled.p`
-  width: 690px;
-  font-size: 20px;
+  width: 1000px;
+  font-size: 28px;
   font-weight: 300;
   font-style: normal;
   color: #C4C4C4;
   margin-bottom: 70px;
-  @media screen and (max-width: 800px) {
-    width: 480px;
-    font-size: 12px;
-    margin-bottom: 30px;
-  }
-  @media screen and (max-width: 438px) {
-    width: 280px;
-    font-size: 12px;
-  }
+  ${mq({
+    fontSize: [
+      null, '20px', '12px', null,
+    ],
+    width: [ null, '700px', '400px', '300px'],
+    marginLeft: [null, null, '64px', '24px'],
+    marginBottom: [null, null, '30px', null],
+  })};
 `
 
 export const ButtonTagLineContainer = styled.div`
@@ -59,32 +58,19 @@ export const ButtonTagLineContainer = styled.div`
 `
 
 export const ImageBackground = styled.img`
-  src: url(${props => props.src});
   height: 355px;
   width: 242px;
   pointer-events: none;
   position: absolute;
   z-index: 0;
-  right: 470px;
-  top: 164px;
-
-  @media screen and (max-width: 1366px) {
-    height: 355px;
-    width: 242px;
-    right: 180px;
-    top: 164px;
-  }
+  right: 340px;
+  top: 280px;
   
-  @media screen and (max-width: 800px) {
-    height: 240px;
-    width: 165px;
-    right: 50px;
-    top: 120px;
-  }
-  @media screen and (max-width: 438px) {
-    height: 180px;
-    width: 120px;
-    right: 15px;
-    top: 90px;
-  }
+  ${mq({
+    height: [null, null, '180px', '130px'],
+    width: [null, null, '120px', '90px'],
+    right: [null, '240px', '100px', '15px'],
+    top: [null, '140px', '100px', '100px']
+  })};
+ 
 `
