@@ -33,7 +33,7 @@ const Search = styled.div`
   }
 
   ${mq({
-    width: [null, '30vw', '24vw', '20vw', '20vw'],
+    width: [null, '30vw', '24vw', '50vw', '40vw'],
     margin: [null, null, '0 16px', '0 10px', '0 5px'],
   })}
 `;

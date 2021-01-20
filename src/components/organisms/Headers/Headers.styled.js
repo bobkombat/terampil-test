@@ -32,10 +32,11 @@ export const Header = styled.header`
       null,
       '15px 60px 14px 60px',
       '15px 30px 14px 30px',
-      '15px 10px 14px 10px',
+      '15px 15px 14px 15px',
     ],
     '.header-link': {
       minWidth: ['180px', null, null, '160px'],
+      display: ['flex', null, null, 'none'],
     },
   })}
 `;
