@@ -1,14 +1,11 @@
 import React from 'react';
 import PageLayout from 'components/organisms/PageLayout';
-import Button from 'components/atoms/Button';
 
-import logo from '../../logo.svg';
 import './App.css';
 import '../../index.css';
-import InputComponent from 'components/atoms/Input/Input';
 import Headers from 'components/organisms/Headers';
-import Dropdown from 'components/atoms/Dropdown';
 import Collaboration from 'components/organisms/InCollaboration';
+import {TagLine} from "../../components/organisms/TagLine";
 
 export default function HomePage() {
   // SEO metadata
@@ -21,39 +18,10 @@ export default function HomePage() {
 
   return (
     <PageLayout seo={seo}>
-      {/* <Headers /> */}
+       <Headers />
       <div className="App">
         <header className="App-header">
-          {/*<h1>Learn anytime, anywhere, at your own pace.</h1>*/}
-          {/*<img src={logo} className="App-logo" alt="logo" />*/}
-          {/*<h1>Learn anytime, anywhere, at your own pace.</h1>*/}
           <TagLine />
-          {/*<a*/}
-          {/*  className="App-link"*/}
-          {/*  href="https://reactjs.org"*/}
-          {/*  target="_blank"*/}
-          {/*  rel="noopener noreferrer"*/}
-          {/*>*/}
-          {/*  Learn React*/}
-          {/*</a>*/}
-          {/*<Button primary large>*/}
-          {/*  View Plan*/}
-          {/*</Button>*/}
-          {/*<Button secondary large>*/}
-          {/*  Start Free Trial*/}
-          {/*</Button>*/}
-          {/*<Button primary medium>*/}
-          {/*  Daftar*/}
-          {/*</Button>*/}
-          {/*<Button secondary medium>*/}
-          {/*  Masuk*/}
-          {/*</Button>*/}
-          {/*<Button primary large>*/}
-          {/*  Mulai berlangganan*/}
-          {/*</Button>*/}
-          {/*<InputComponent />*/}
-
-          {/*<Dropdown>Kategori</Dropdown>*/}
           <Collaboration />
         </header>
       </div>
