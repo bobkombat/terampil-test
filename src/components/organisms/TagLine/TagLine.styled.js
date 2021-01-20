@@ -11,6 +11,7 @@ export const TagLineStyled = styled.h1`
   margin-top: 96px;
   margin-right: 288px;
   margin-left: 288px;
+  font-family: Archivo;
   
   div {
     padding-left: 100px;
@@ -41,6 +42,8 @@ export const SubTagLine = styled.p`
   font-style: normal;
   color: #C4C4C4;
   margin-bottom: 70px;
+  font-family: Inter;
+  
   ${mq({
     fontSize: [
       null, '20px', '20px', '12px', null,
