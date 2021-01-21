@@ -5,6 +5,7 @@ import Button from 'components/atoms/Button';
 import '../../index.css';
 import Headers from 'components/organisms/Headers';
 import Collaboration from 'components/organisms/InCollaboration';
+import Video from 'components/atoms/Video';
 
 export default function HomePage() {
   // SEO metadata
@@ -17,7 +18,6 @@ export default function HomePage() {
 
   return (
     <PageLayout seo={seo}>
-      <Headers />
       <h1>Learn anytime, anywhere, at your own pace.</h1>
       <Button primary large>
         View Plan
@@ -34,6 +34,8 @@ export default function HomePage() {
       <Button primary large>
         Mulai berlangganan
       </Button>
+
+      <Video light loop playing style={{width: '100%'}} url="https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/360/Big_Buck_Bunny_360_10s_1MB.mp4"/>
 
       <Collaboration />
     </PageLayout>

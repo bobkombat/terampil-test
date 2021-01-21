@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import PropTypes from 'prop-types';
 import Headers from '../Headers';
+import { Wrapper } from './PageLAyout.styled';
 
 const PageLayout = ({ seo, children }) => {
   const { title, description } = seo;
@@ -11,7 +12,7 @@ const PageLayout = ({ seo, children }) => {
       <Helmet defaultTitle={`Terampil${title ? ` \u2022 ${title}` : ''}`}>
         <meta name="description" description={description} />
       </Helmet>
-      {/* <Headers /> */}
+      <Headers />
       {children}
     </React.Fragment>
   );
