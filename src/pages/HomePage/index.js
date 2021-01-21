@@ -1,9 +1,12 @@
 import React from 'react';
 import PageLayout from 'components/organisms/PageLayout';
-import Button from 'components/atoms/Button';
 
+import './App.css';
 import '../../index.css';
-import Dropdown from 'components/atoms/Dropdown';
+import Headers from 'components/organisms/Headers';
+import {TagLine} from "../../components/organisms/TagLine";
+import {AdsTrainer} from "../../components/organisms/AdsTrainer";
+import Video from 'components/atoms/Video';
 import Collaboration from 'components/organisms/Collaboration';
 import PopularTrainer from 'components/organisms/PopularTrainer/PopularTrainer';
 import UniqueValue from 'components/organisms/UniqueValue';
@@ -20,6 +23,7 @@ export default function HomePage() {
 
   return (
     <PageLayout seo={seo}>
+<<<<<<< HEAD
       {/* <Headers /> */}
       {/* <Dropdown>Kategori</Dropdown> */}
       <Button primary large>
@@ -43,6 +47,30 @@ export default function HomePage() {
       <PopularTrainer />
       <UniqueValue />
       <Cooperation />
+=======
+       <Headers />
+      <div className="App">
+        <header className="App-header">
+          <TagLine />
+
+          <Video
+            light
+            loop
+            playing
+            style={{ width: '100%' }}
+            url="https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/360/Big_Buck_Bunny_360_10s_1MB.mp4"
+          />
+
+          {/* <InputComponent /> */}
+          {/* <Dropdown>Kategori</Dropdown> */}
+          <Collaboration />
+          <PopularTrainer />
+          <AdsTrainer />
+        </header>
+      </div>
+
+
+>>>>>>> f1fcbf0a0e3bd123041ab3e3cdf8da007313b05f
     </PageLayout>
   );
 }
