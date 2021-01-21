@@ -6,7 +6,7 @@ import logo from '../../../assets/png/terampil-transparent.png';
 export function TagLine() {
   return (
     <Container>
-    <div>
+    <div style={{display: 'flex', justifyContent: 'center'}}>
       <TagLineStyled>Learn anytime, anywhere, at your own pace.</TagLineStyled>
       <ImageBackground src={logo} alt={'Transparent Logo'}/>
     </div>

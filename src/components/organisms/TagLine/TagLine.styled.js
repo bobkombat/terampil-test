@@ -3,17 +3,15 @@ import { mq } from '../../../assets/styles/theme';
 
 export const TagLineStyled = styled.h1`
   position: relative;
-  width: 800px;
+  width: 80%;
   flex-direction: column;
   font-size: 60px;
   font-weight: bold;
   text-align: center;
   color: #FDFDFD;
   margin-top: 96px;
-  margin-right: 288px;
-  margin-left: 288px;
   z-index: 2;
-  font-family: Archivo;
+  font-family: Archivo,serif;
   
   div {
     padding-left: 100px;
@@ -24,9 +22,7 @@ export const TagLineStyled = styled.h1`
     fontSize: [
       '90px', '60px', '60px', '40px', '24px',
     ],
-    width: ['1200px', '800px', '800px', '500px', '300px'],
-    marginLeft: [null, null, null, '64px', '24px'],
-    marginRight: [null, null, null, '64px', '24px'],
+    width: ['60%', null, '800px', '500px', '300px'],
   })};
 `
 export const Container = styled.div`
