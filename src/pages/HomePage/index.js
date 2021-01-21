@@ -25,8 +25,6 @@ export default function HomePage() {
       <div className="App">
         <header className="App-header">
           <TagLine />
-          <Collaboration />
-          <AdsTrainer />
 
           <Video
             light
@@ -40,6 +38,7 @@ export default function HomePage() {
           {/* <Dropdown>Kategori</Dropdown> */}
           <Collaboration />
           <PopularTrainer />
+          <AdsTrainer />
         </header>
       </div>
 
