@@ -24,6 +24,7 @@ export const AdsTrainerStyled = styled.div`
     color: #101010;
     float: left;
     text-align: left;
+    z-index: 2;
 
     ${mq({
       fontSize: [null, null, null, null, '18px']
@@ -39,6 +40,7 @@ export const AdsTrainerStyled = styled.div`
     line-height: 31px;
     float: left;
     color: #101010;
+    z-index: 2;
     text-align: left;
 
     ${mq({
@@ -52,13 +54,13 @@ export const AdsTrainerStyled = styled.div`
     display: flex;
     flex-direction: column;
     border-right-color: #000004;
-    border-right-width: 2px;
+    border-right-width: 1px;
     border-right-style: solid;
     padding-right: 48px;
 
     ${mq({
       borderRightWidth: [null, null, null, null, '0px'],
-      borderBottomWidth: [null, null, null, null, '2px'],
+      borderBottomWidth: [null, null, null, null, '1px'],
       borderBottomStyle: [null, null, null, null, 'solid'],
       borderBottomColor: [null, null, null, null, '#000004'],
       paddingBottom: [null, null, null, null, '10px'],

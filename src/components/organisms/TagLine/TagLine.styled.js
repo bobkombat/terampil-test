@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { mq } from '../../../assets/styles/theme';
 
 export const TagLineStyled = styled.h1`
+  position: relative;
   width: 800px;
   flex-direction: column;
   font-size: 60px;
@@ -11,6 +12,7 @@ export const TagLineStyled = styled.h1`
   margin-top: 96px;
   margin-right: 288px;
   margin-left: 288px;
+  z-index: 2;
   font-family: Archivo;
   
   div {
@@ -31,17 +33,20 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  position: relative;
   align-items: center;
   justify-content: center;
 `
 
 export const SubTagLine = styled.p`
+  position: relative;
   width: 1000px;
   font-size: 28px;
   font-weight: 300;
   font-style: normal;
   color: #C4C4C4;
   margin-bottom: 70px;
+  z-index: 2;
   font-family: Inter;
   
   ${mq({
