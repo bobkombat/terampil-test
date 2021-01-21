@@ -14,6 +14,15 @@ const PageLayout = ({ seo, children }) => {
       </Helmet>
       <Headers />
       {children}
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <br />
+      <br />
     </React.Fragment>
   );
 };
