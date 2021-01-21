@@ -27,7 +27,7 @@ function Collaboration(props) {
       </div>
       <div className="image-icon">
         {iconColaboratin.map((item, index) => {
-          return <Image src={item.src} key={index} />;
+          return <Image src={item.src} alt="logo" />;
         })}
       </div>
     </Container>

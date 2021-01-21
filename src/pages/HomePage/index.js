@@ -6,6 +6,8 @@ import '../../index.css';
 import Dropdown from 'components/atoms/Dropdown';
 import Collaboration from 'components/organisms/Collaboration';
 import PopularTrainer from 'components/organisms/PopularTrainer/PopularTrainer';
+import UniqueValue from 'components/organisms/UniqueValue';
+import Cooperation from 'components/organisms/Cooperation';
 
 export default function HomePage() {
   // SEO metadata
@@ -39,6 +41,8 @@ export default function HomePage() {
       {/* <Dropdown>Kategori</Dropdown> */}
       <Collaboration />
       <PopularTrainer />
+      <UniqueValue />
+      <Cooperation />
     </PageLayout>
   );
 }
