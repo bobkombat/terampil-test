@@ -14,7 +14,7 @@ export const Header = styled.header`
   justify-content: space-between;
   align-items: center;
   -webkit-backface-visibility: hidden;
-  z-index: 1;
+  z-index: 100;
 
   & > div {
     display: flex;

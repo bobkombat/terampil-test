@@ -24,7 +24,7 @@ export const TagLineStyled = styled.h1`
     ],
     width: ['60%', '60%', '70%', '65%', '75%'],
   })};
-`
+`;
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -32,7 +32,7 @@ export const Container = styled.div`
   position: relative;
   align-items: center;
   justify-content: center;
-`
+`;
 
 export const SubTagLine = styled.p`
   position: relative;
@@ -44,16 +44,14 @@ export const SubTagLine = styled.p`
   margin-bottom: 70px;
   z-index: 2;
   font-family: Inter;
-  
+
   ${mq({
-    fontSize: [
-      null, '20px', '20px', '12px', null,
-    ],
-    width: [ null, '700px', '700px', '400px', '300px'],
+    fontSize: [null, '20px', '20px', '12px', null],
+    width: [null, '700px', '700px', '400px', '300px'],
     marginLeft: [null, null, '64px', '64px', '24px'],
     marginBottom: [null, null, '30px', '30px', null],
   })};
-`
+`;
 
 export const ButtonTagLineContainer = styled.div`
   display: flex;
@@ -62,7 +60,7 @@ export const ButtonTagLineContainer = styled.div`
   @media screen and (max-width: 438px) {
     flex-direction: column;
   }
-`
+`;
 
 export const ImageBackground = styled.img`
   height: 355px;
@@ -72,12 +70,11 @@ export const ImageBackground = styled.img`
   z-index: 0;
   right: 340px;
   top: 220px;
-  
+
   ${mq({
     height: [null, null, null, '180px', '130px'],
     width: [null, null, null, '120px', '90px'],
-    right: [null, '240px', '240px','130px', '15px'],
-    top: [null, '140px', '140px','100px', '100px']
+    right: [null, '240px', '240px', '130px', '15px'],
+    top: [null, '140px', '140px', '100px', '100px'],
   })};
- 
-`
+`;

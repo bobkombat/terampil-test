@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import PropTypes from 'prop-types';
 import Headers from '../Headers';
 import { Wrapper } from './PageLAyout.styled';
+import Footer from '../Footer';
 
 const PageLayout = ({ seo, children }) => {
   const { title, description } = seo;
@@ -14,13 +15,9 @@ const PageLayout = ({ seo, children }) => {
       </Helmet>
       <Headers />
       {children}
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
 
+      <Footer />
+      <br />
       <br />
       <br />
     </React.Fragment>

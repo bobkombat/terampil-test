@@ -10,6 +10,8 @@ import Video from 'components/atoms/Video';
 import Collaboration from 'components/organisms/Collaboration';
 import PopularTrainer from 'components/organisms/PopularTrainer/PopularTrainer';
 import {CardTraining} from "../../components/organisms/Cards/CardTraining";
+import UniqueValue from 'components/organisms/UniqueValue';
+import Cooperation from 'components/organisms/Cooperation';
 
 export default function HomePage() {
   // SEO metadata
@@ -27,19 +29,21 @@ export default function HomePage() {
         <header className="App-header">
           <TagLine />
 
-          <Video
-            light
-            loop
-            playing
-            style={{ width: '100%' }}
-            url="https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/360/Big_Buck_Bunny_360_10s_1MB.mp4"
-          />
+      <Video
+        light
+        loop
+        playing
+        style={{ width: '100%' }}
+        url="https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/360/Big_Buck_Bunny_360_10s_1MB.mp4"
+      />
 
           {/* <InputComponent /> */}
           {/* <Dropdown>Kategori</Dropdown> */}
           <Collaboration />
           <PopularTrainer />
           <AdsTrainer />
+          <UniqueValue />
+          <Cooperation />
           <CardTraining />
         </header>
       </div>
