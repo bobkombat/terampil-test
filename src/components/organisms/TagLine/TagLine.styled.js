@@ -22,7 +22,7 @@ export const TagLineStyled = styled.h1`
     fontSize: [
       '90px', '60px', '60px', '40px', '24px',
     ],
-    width: ['60%', null, '800px', '500px', '300px'],
+    width: ['60%', '60%', '70%', '65%', '75%'],
   })};
 `
 export const Container = styled.div`
