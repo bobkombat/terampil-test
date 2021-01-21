@@ -6,6 +6,7 @@ import '../../index.css';
 import Headers from 'components/organisms/Headers';
 import Collaboration from 'components/organisms/InCollaboration';
 import {TagLine} from "../../components/organisms/TagLine";
+import {AdsTrainer} from "../../components/organisms/AdsTrainer";
 
 export default function HomePage() {
   // SEO metadata
@@ -23,6 +24,7 @@ export default function HomePage() {
         <header className="App-header">
           <TagLine />
           <Collaboration />
+          <AdsTrainer />
         </header>
       </div>
     </PageLayout>

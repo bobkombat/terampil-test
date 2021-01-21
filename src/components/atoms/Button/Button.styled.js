@@ -6,7 +6,7 @@ const ButtonStyled = styled.button.attrs((props) => ({
   color: ButtonProps.checkButtonColor(props),
   rounded: props.rounded ? '30px' : '5px',
   size: ButtonProps.checkButtonSize(props),
-  border: props.secondary ? 'solid 1px #00debf' : 'none',
+  border: ButtonProps.checkButtonBorder(props),
 }))`
   --var-width: ${(props) => props.size.width};
   --var-height: ${(props) => props.size.height};

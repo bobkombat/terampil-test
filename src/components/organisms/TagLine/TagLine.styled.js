@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import {mq} from "../../../assets/styles/theme";
+import styled from 'styled-components';
+import { mq } from '../../../assets/styles/theme';
 
 export const TagLineStyled = styled.h1`
   width: 800px;
