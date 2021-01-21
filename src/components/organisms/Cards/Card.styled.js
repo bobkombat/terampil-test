@@ -1,30 +1,49 @@
 import styled from 'styled-components';
+import { mq } from 'assets/styles/theme';
 
 export const CardImage = styled.div`
-  width: 295px;
-  height: 525px;
-  margin-left: 21px;
-  box-sizing: border-box;
-  position: relative;
+  width: 100%;
+  height: 655px;
   cursor: pointer;
-  background-color: black;
   border-radius: 12px;
-  background-image: url();
+  margin: 0 10px;
+  background: #626262;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: url('${(props) => props.src}');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.1s ease-out;
+
+  ${mq({
+    height: [null, '555px', '455px', '355px', '350px', '250px'],
+    margin: [null, null, null, '0 5px'],
+  })}
+`;
+
+export const BottomContainer = styled.div`
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: linear-gradient(179.45deg, rgba(0, 0, 0, 0) 27.46%, #101010 99.52%);
+  padding-top: 40px;
 `;
 
 export const Image = styled.img`
   width: inherit;
   border-radius: 12px;
   background-color: black;
-  filter: opacity(0.79);
 `;
 
 export const TitleName = styled.h5`
   width: inherit;
-  position: absolute;
   font-weight: bold;
-  bottom: 85px;
-  left: 0px;
   margin: 10px 0px 10px;
   font-family: Archivo;
   font-size: 24px;
@@ -34,9 +53,6 @@ export const TitleName = styled.h5`
 
 export const Title = styled.p`
   width: inherit;
-  position: absolute;
-  bottom: 37.3px;
-  left: 0px;
   margin: 10px 0px 10px;
   font-family: 'Inter';
   font-stretch: normal;
