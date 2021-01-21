@@ -4,9 +4,11 @@ import PageLayout from 'components/organisms/PageLayout';
 import './App.css';
 import '../../index.css';
 import Headers from 'components/organisms/Headers';
-import Collaboration from 'components/organisms/InCollaboration';
 import {TagLine} from "../../components/organisms/TagLine";
 import {AdsTrainer} from "../../components/organisms/AdsTrainer";
+import Video from 'components/atoms/Video';
+import Collaboration from 'components/organisms/Collaboration';
+import PopularTrainer from 'components/organisms/PopularTrainer/PopularTrainer';
 
 export default function HomePage() {
   // SEO metadata
@@ -25,8 +27,23 @@ export default function HomePage() {
           <TagLine />
           <Collaboration />
           <AdsTrainer />
+
+          <Video
+            light
+            loop
+            playing
+            style={{ width: '100%' }}
+            url="https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/360/Big_Buck_Bunny_360_10s_1MB.mp4"
+          />
+
+          {/* <InputComponent /> */}
+          {/* <Dropdown>Kategori</Dropdown> */}
+          <Collaboration />
+          <PopularTrainer />
         </header>
       </div>
+
+
     </PageLayout>
   );
 }
