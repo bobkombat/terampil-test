@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { mq } from '../../../assets/styles/theme'
+import { globalTheme } from "../../../assets/styles/theme";
 
 export const AdsTrainerStyled = styled.div`
   display: flex;
@@ -102,8 +103,16 @@ export const AdsTrainerStyled = styled.div`
   .button {
     float: left;
     flex: 1;
+    transition: all 0.2s ease-in-out;
+    
+    &:hover {
+      background-color: #000004;
+      color: ${globalTheme.color.primary};
+    }
+    
     ${mq({
       width: [null, null, null, null, '100px']
     })}
+    
   }
 `
