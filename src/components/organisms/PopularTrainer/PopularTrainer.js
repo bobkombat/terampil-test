@@ -9,6 +9,8 @@ import ImageTrainer2 from '../../../assets/png/Rectangle 4.png';
 // component
 import Slider from 'components/atoms/Slider';
 import { SliderControlPrimary } from 'components/atoms/Slider/Slider.styled';
+import {SwiperSlide} from "swiper/react";
+import CardTrainer from "../Cards/CardTrainer";
 
 const DotPagination = styled.button`
   padding: 3px;
@@ -54,7 +56,7 @@ function PopularTrainer(props) {
         <h1 className="title-trainer">Classes Taught by Real Creators</h1>
       </Title>
       <div className="slider-container">
-        <SliderControlPrimary className="prev-primary">
+        <SliderControlPrimary className="prev-primary" id="prev-trainer">
           <svg width="10" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M8.5 0.249998C8.79206 0.249428 9.07511 0.351145 9.3 0.537497C9.42657 0.642433 9.5312 0.771311 9.60789 0.916744C9.68458 1.06218 9.73182 1.22131 9.74692 1.38503C9.76201 1.54875 9.74466 1.71384 9.69585 1.87085C9.64705 2.02785 9.56775 2.17369 9.4625 2.3L3.8625 9L9.2625 15.7125C9.36633 15.8404 9.44387 15.9875 9.49066 16.1454C9.53745 16.3033 9.55257 16.4689 9.53514 16.6327C9.51772 16.7965 9.4681 16.9552 9.38913 17.0998C9.31016 17.2443 9.20341 17.3718 9.075 17.475C8.94566 17.5888 8.79421 17.6746 8.63013 17.7271C8.46605 17.7796 8.2929 17.7976 8.12153 17.78C7.95016 17.7624 7.78429 17.7096 7.63431 17.6248C7.48433 17.5401 7.35349 17.4252 7.25 17.2875L1.2125 9.7875C1.02864 9.56383 0.928137 9.28328 0.928137 8.99375C0.928137 8.70422 1.02864 8.42366 1.2125 8.2L7.4625 0.699999C7.58789 0.548727 7.74719 0.429146 7.92745 0.35096C8.10771 0.272776 8.30386 0.238184 8.5 0.249998Z"
@@ -65,9 +67,17 @@ function PopularTrainer(props) {
           </svg>
         </SliderControlPrimary>
         <CardContainer>
-          <Slider trainerImage={trainerImage} />
+          <Slider next="next-trainer" prev="prev-trainer" pagination='trainer-popular'>
+            {trainerImage.map((trainer, index) => {
+              return (
+                  <SwiperSlide>
+                    <CardTrainer trainer={trainer} next="next-trainer" prev="prev-trainer" />
+                  </SwiperSlide>
+              );
+            })}
+          </Slider>
         </CardContainer>
-        <SliderControlPrimary className="next-primary">
+        <SliderControlPrimary className="next-primary" id="next-trainer">
           <svg
             width="10"
             height="18"
@@ -83,9 +93,11 @@ function PopularTrainer(props) {
           </svg>
         </SliderControlPrimary>
       </div>
-      <SliderPagination className="slider-pagination" />
+      <SliderPagination id='trainer-popular'/>
+
     </Container>
-  );
+
+);
 }
 
 PopularTrainer.propTypes = {};

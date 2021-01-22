@@ -15,15 +15,16 @@ import 'swiper/components/effect-fade/effect-fade.scss';
 SwiperCore.use([Navigation, Pagination, EffectFade]);
 
 const Slider = (props) => {
-  const { trainerImage, ...rest } = props;
+  const { trainerImage, component, children, prev, next, count = 4, pagination, ...rest } = props;
+  console.log(prev, next);
   return (
     <StyledSlider>
       <Swiper
-        navigation={{ nextEl: '.next-primary', prevEl: '.prev-primary' }}
-        slidesPerView={4}
+        navigation={{ nextEl: `#${next}`, prevEl: `#${prev}` }}
+        slidesPerView={count}
         pagination={{
           clickable: true,
-          el: '.slider-pagination',
+          el: `#${pagination}`,
         }}
         style={{ padding: '0 0px' }}
         slidesPerGroup={4}
@@ -31,13 +32,7 @@ const Slider = (props) => {
         speed={700}
         allowTouchMove={false}
       >
-        {trainerImage.map((trainer, index) => {
-          return (
-            <SwiperSlide>
-              <CardTrainer trainer={trainer} key={index} />
-            </SwiperSlide>
-          );
-        })}
+        {children}
         <div slot="container-start"></div>
         <div slot="container-end"></div>
         <div slot="wrapper-start"></div>

@@ -3,9 +3,9 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
   width: 100%;
-  padding: 6em 0;
   background-color: #202020;
-  padding-top: 40px;
+  padding: 40px 0;
+
 `;
 
 export const Title = styled.div`
@@ -32,6 +32,7 @@ export const CardContainer = styled.div`
 `;
 
 export const SliderPagination = styled.div`
+  position: relative;
   text-align: center;
   transition: 300ms opacity;
   transform: translate3d(0, 0, 0);

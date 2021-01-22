@@ -54,7 +54,7 @@ export const SliderControlPrimary = styled.div`
   }
 
   &.swiper-button-disabled {
-    display: none;
+    visibility: hidden;
   }
 
   ${mq({
