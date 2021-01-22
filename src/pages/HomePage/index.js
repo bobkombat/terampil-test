@@ -2,7 +2,6 @@ import React from 'react';
 import PageLayout from 'components/organisms/PageLayout';
 
 import './App.css';
-import '../../index.css';
 import Headers from 'components/organisms/Headers';
 import { TagLine } from '../../components/organisms/TagLine';
 import { AdsTrainer } from '../../components/organisms/AdsTrainer';

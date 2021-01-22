@@ -28,7 +28,7 @@ export const TagLineStyled = styled.h1`
     marginRight: [null, null, null, '64px', '24px'],
   })};
 `;
-export const Container = styled.div`
+export const Container = styled.section`
   display: flex;
   flex-direction: column;
   width: 100%;
