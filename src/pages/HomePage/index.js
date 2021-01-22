@@ -9,10 +9,14 @@ import { AdsTrainer } from '../../components/organisms/AdsTrainer';
 import Video from 'components/atoms/Video';
 import Collaboration from 'components/organisms/Collaboration';
 import PopularTrainer from 'components/organisms/PopularTrainer/PopularTrainer';
+import { CardTraining } from '../../components/organisms/Cards/CardTraining';
 import UniqueValue from 'components/organisms/UniqueValue';
 import Cooperation from 'components/organisms/Cooperation';
 import Testimoni from 'components/organisms/Testimoni';
 import NewTraining from 'components/organisms/NewTraining';
+import { PopolarTraining } from '../../components/organisms/PopularTraining';
+import { BannerAds } from '../../components/organisms/BannerAds';
+import FAQ from '../../components/organisms/FAQ';
 
 export default function HomePage() {
   // SEO metadata
@@ -25,32 +29,30 @@ export default function HomePage() {
 
   return (
     <PageLayout seo={seo}>
-      {/* <Headers /> */}
-      {/* <Dropdown>Kategori</Dropdown> */}
-
-      {/* <InputComponent /> */}
-      {/* <Dropdown>Kategori</Dropdown> */}
-
-      <TagLine />
-
-      <Video
-        light
-        loop
-        playing
-        style={{ width: '100%' }}
-        url="https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/360/Big_Buck_Bunny_360_10s_1MB.mp4"
-      />
-
-      {/* <InputComponent />
-      <Dropdown>Kategori</Dropdown> */}
-      <Collaboration />
-      <PopularTrainer />
-      <UniqueValue />
-      <Cooperation />
-      <NewTraining />
-      <AdsTrainer />
-      <Testimoni />
       <Headers />
+      <div className="App">
+        <header className="App-header">
+          <TagLine />
+          <BannerAds />
+
+          <Video
+            light
+            loop
+            playing
+            style={{ width: '100%' }}
+            url="https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/360/Big_Buck_Bunny_360_10s_1MB.mp4"
+          />
+          <PopolarTraining />
+          <Collaboration />
+          <PopularTrainer />
+          <NewTraining />
+          <AdsTrainer />
+          <UniqueValue />
+          <Cooperation />
+          <Testimoni />
+          <FAQ />
+        </header>
+      </div>
     </PageLayout>
   );
 }

@@ -15,7 +15,6 @@ export const SliderControlPrimary = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
     bottom: 1%;
     right: 40px;
     width: 40px;
@@ -33,7 +32,6 @@ export const SliderControlPrimary = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
     bottom: 1%;
     left: 40px;
     width: 40px;
@@ -56,7 +54,7 @@ export const SliderControlPrimary = styled.div`
   }
 
   &.swiper-button-disabled {
-    display: none;
+    visibility: hidden;
   }
 
   ${mq({
