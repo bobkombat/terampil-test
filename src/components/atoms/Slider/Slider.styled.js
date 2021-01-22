@@ -15,12 +15,10 @@ export const SliderControlPrimary = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    bottom: 50%;
-    left: 95%;
+    bottom: 1%;
+    right: 40px;
     width: 40px;
     height: 40px;
-    transform: translateY(-50%);
     border-radius: 100%;
     background-color: #626262;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
@@ -34,9 +32,8 @@ export const SliderControlPrimary = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    top: 50%;
-    left: 3%;
+    bottom: 1%;
+    left: 40px;
     width: 40px;
     height: 40px;
     border-radius: 100%;

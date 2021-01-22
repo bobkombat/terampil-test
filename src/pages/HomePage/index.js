@@ -40,14 +40,14 @@ export default function HomePage() {
                         url="https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/360/Big_Buck_Bunny_360_10s_1MB.mp4"
                     />
 
-                    {/* <InputComponent /> */}
-                    {/* <Dropdown>Kategori</Dropdown> */}
+
                     <PopolarTraining />
                     <Collaboration />
                     <PopularTrainer />
                     <AdsTrainer />
                     <UniqueValue />
                     <Cooperation />
+                    <FAQ />
                 </header>
             </div>
         </PageLayout>
