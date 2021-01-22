@@ -10,7 +10,6 @@ import ImageTrainer2 from '../../../assets/png/Rectangle 4.png';
 import Slider from 'components/atoms/Slider';
 import { SliderControlPrimary } from 'components/atoms/Slider/Slider.styled';
 import {SwiperSlide} from "swiper/react";
-import {CardTraining} from "../Cards/CardTraining";
 import CardTrainer from "../Cards/CardTrainer";
 
 const DotPagination = styled.button`
@@ -68,7 +67,7 @@ function PopularTrainer(props) {
           </svg>
         </SliderControlPrimary>
         <CardContainer>
-          <Slider next="next-trainer" prev="prev-trainer">
+          <Slider next="next-trainer" prev="prev-trainer" pagination='trainer-popular'>
             {trainerImage.map((trainer, index) => {
               return (
                   <SwiperSlide>
@@ -94,7 +93,7 @@ function PopularTrainer(props) {
           </svg>
         </SliderControlPrimary>
       </div>
-      <SliderPagination className="slider-pagination" />
+      <SliderPagination id='trainer-popular'/>
 
     </Container>
 

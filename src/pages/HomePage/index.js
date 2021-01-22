@@ -14,6 +14,7 @@ import UniqueValue from 'components/organisms/UniqueValue';
 import Cooperation from 'components/organisms/Cooperation';
 import {PopolarTraining} from "../../components/organisms/PopularTraining";
 import {BannerAds} from "../../components/organisms/BannerAds";
+import FAQ from "../../components/organisms/FAQ";
 
 export default function HomePage() {
     // SEO metadata

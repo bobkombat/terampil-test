@@ -163,7 +163,7 @@ export const PopolarTraining = () => {
 
                 <CardContainer>
 
-                    <Slider next="next-training" prev="prev-training">
+                    <Slider next="next-training" prev="prev-training" pagination='training-popular'>
                         {trainings.map((training, index) => {
                             return (
                                 <SwiperSlide>
@@ -192,7 +192,7 @@ export const PopolarTraining = () => {
                 </SliderControlPrimary>
             </div>
 
-            <SliderPagination className="slider-pagination" />
+            <SliderPagination id='training-popular' />
 
         </Container>
     )

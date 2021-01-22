@@ -32,6 +32,7 @@ export const CardContainer = styled.div`
 `;
 
 export const SliderPagination = styled.div`
+  position: relative;
   text-align: center;
   transition: 300ms opacity;
   transform: translate3d(0, 0, 0);
