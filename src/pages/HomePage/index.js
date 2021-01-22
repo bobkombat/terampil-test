@@ -3,11 +3,12 @@ import PageLayout from 'components/organisms/PageLayout';
 
 import './App.css';
 import Headers from 'components/organisms/Headers';
-import { TagLine } from '../../components/organisms/TagLine';
-import { AdsTrainer } from '../../components/organisms/AdsTrainer';
+import {TagLine} from "../../components/organisms/TagLine";
+import {AdsTrainer} from "../../components/organisms/AdsTrainer";
 import Video from 'components/atoms/Video';
 import Collaboration from 'components/organisms/Collaboration';
 import PopularTrainer from 'components/organisms/PopularTrainer/PopularTrainer';
+import {CardTraining} from "../../components/organisms/Cards/CardTraining";
 import UniqueValue from 'components/organisms/UniqueValue';
 import Cooperation from 'components/organisms/Cooperation';
 
@@ -22,13 +23,10 @@ export default function HomePage() {
 
   return (
     <PageLayout seo={seo}>
-      {/* <Headers /> */}
-      {/* <Dropdown>Kategori</Dropdown> */}
-
-      {/* <InputComponent /> */}
-      {/* <Dropdown>Kategori</Dropdown> */}
-
-      <TagLine />
+      <Headers />
+      <div className="App">
+        <header className="App-header">
+          <TagLine />
 
       <Video
         light
@@ -38,14 +36,16 @@ export default function HomePage() {
         url="https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/360/Big_Buck_Bunny_360_10s_1MB.mp4"
       />
 
-      {/* <InputComponent />
-      <Dropdown>Kategori</Dropdown> */}
-      <Collaboration />
-      <PopularTrainer />
-      <UniqueValue />
-      <Cooperation />
-      <AdsTrainer />
-      <Headers />
+          {/* <InputComponent /> */}
+          {/* <Dropdown>Kategori</Dropdown> */}
+          <Collaboration />
+          <PopularTrainer />
+          <AdsTrainer />
+          <UniqueValue />
+          <Cooperation />
+          <CardTraining />
+        </header>
+      </div>
     </PageLayout>
   );
 }
