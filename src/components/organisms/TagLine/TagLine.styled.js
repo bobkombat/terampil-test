@@ -25,7 +25,7 @@ export const TagLineStyled = styled.h1`
     width: ['60%', '60%', '70%', '65%', '75%'],
   })};
 `;
-export const Container = styled.div`
+export const Container = styled.section`
   display: flex;
   flex-direction: column;
   width: 100%;

@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const CardTrainingStyled = styled.div`
-  width: 295px;
-  margin-right: 20px;
+  width: 100%;
+  margin: 0 10px;
   flex-direction: column;
   display: flex;
   
@@ -46,6 +46,7 @@ export const CardTrainingStyled = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
   }
   
   .cover {
@@ -83,12 +84,14 @@ export const CardTrainingStyled = styled.div`
     float: left;
     text-align: left;
     margin-bottom: 0;
+    cursor: pointer;
   }
   
   h2 {
     font-family: Inter,serif;
     font-style: normal;
     font-weight: 500;
+    max-lines: 2;
     font-size: 16px;
     line-height: 24px;
     float: left;

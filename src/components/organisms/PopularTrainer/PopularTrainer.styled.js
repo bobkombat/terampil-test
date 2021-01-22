@@ -3,9 +3,9 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
   width: 100%;
-  padding: 6em 0;
   background-color: #202020;
-  padding-top: 40px;
+  padding: 40px 0;
+
 `;
 
 export const Title = styled.div`

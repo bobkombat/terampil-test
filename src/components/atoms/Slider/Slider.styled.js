@@ -15,11 +15,12 @@ export const SliderControlPrimary = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    bottom: 1%;
-    right: 40px;
+    position: relative;
+    bottom: 50%;
+    left: 95%;
     width: 40px;
     height: 40px;
+    transform: translateY(-50%);
     border-radius: 100%;
     background-color: #626262;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
@@ -33,9 +34,9 @@ export const SliderControlPrimary = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    bottom: 1%;
-    left: 40px;
+    position: relative;
+    top: 50%;
+    left: 3%;
     width: 40px;
     height: 40px;
     border-radius: 100%;
@@ -56,7 +57,7 @@ export const SliderControlPrimary = styled.div`
   }
 
   &.swiper-button-disabled {
-    display: none;
+    visibility: hidden;
   }
 
   ${mq({

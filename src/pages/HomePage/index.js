@@ -12,41 +12,44 @@ import PopularTrainer from 'components/organisms/PopularTrainer/PopularTrainer';
 import {CardTraining} from "../../components/organisms/Cards/CardTraining";
 import UniqueValue from 'components/organisms/UniqueValue';
 import Cooperation from 'components/organisms/Cooperation';
+import {PopolarTraining} from "../../components/organisms/PopularTraining";
+import {BannerAds} from "../../components/organisms/BannerAds";
 
 export default function HomePage() {
-  // SEO metadata
-  const seo = {
-    title: 'Beranda',
-    description:
-      'Rencanakan dan bangun karir Anda bersama Terampil. Temukan berbagai training terbaik yang dapat membantu Anda meraih jenjang karir dambaan.',
-    canonical: null,
-  };
+    // SEO metadata
+    const seo = {
+        title: 'Beranda',
+        description:
+            'Rencanakan dan bangun karir Anda bersama Terampil. Temukan berbagai training terbaik yang dapat membantu Anda meraih jenjang karir dambaan.',
+        canonical: null,
+    };
 
-  return (
-    <PageLayout seo={seo}>
-      <Headers />
-      <div className="App">
-        <header className="App-header">
-          <TagLine />
+    return (
+        <PageLayout seo={seo}>
+            <Headers />
+            <div className="App">
+                <header className="App-header">
+                    <TagLine />
+                    <BannerAds />
 
-      <Video
-        light
-        loop
-        playing
-        style={{ width: '100%' }}
-        url="https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/360/Big_Buck_Bunny_360_10s_1MB.mp4"
-      />
+                    <Video
+                        light
+                        loop
+                        playing
+                        style={{ width: '100%' }}
+                        url="https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/360/Big_Buck_Bunny_360_10s_1MB.mp4"
+                    />
 
-          {/* <InputComponent /> */}
-          {/* <Dropdown>Kategori</Dropdown> */}
-          <Collaboration />
-          <PopularTrainer />
-          <AdsTrainer />
-          <UniqueValue />
-          <Cooperation />
-          <CardTraining />
-        </header>
-      </div>
-    </PageLayout>
-  );
+                    {/* <InputComponent /> */}
+                    {/* <Dropdown>Kategori</Dropdown> */}
+                    <PopolarTraining />
+                    <Collaboration />
+                    <PopularTrainer />
+                    <AdsTrainer />
+                    <UniqueValue />
+                    <Cooperation />
+                </header>
+            </div>
+        </PageLayout>
+    );
 }

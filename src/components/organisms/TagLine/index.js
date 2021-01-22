@@ -6,16 +6,16 @@ import logo from '../../../assets/png/terampil-transparent.png';
 export function TagLine() {
   return (
     <Container>
-    <div style={{display: 'flex', justifyContent: 'center'}}>
-      <TagLineStyled>Learn anytime, anywhere, at your own pace.</TagLineStyled>
-      <ImageBackground src={logo} alt={'Transparent Logo'}/>
-    </div>
-      <SubTagLine>Watch <b>thousand of lesson</b> from the best as they share their stories, skills,
-      shortcuts, failures, and success</SubTagLine>
-    <ButtonTagLineContainer>
-      <Button primary large>Lihat Langganan</Button>
-      <Button secondary large>Mulai Kelas Gratis</Button>
-    </ButtonTagLineContainer>
+      <div style={{display: 'flex', justifyContent: 'center'}}>
+        <TagLineStyled>Learn anytime, anywhere, at your own pace.</TagLineStyled>
+        <ImageBackground src={logo} alt={'Transparent Logo'}/>
+      </div>
+        <SubTagLine>Watch <b>thousand of lesson</b> from the best as they share their stories, skills,
+        shortcuts, failures, and success</SubTagLine>
+      <ButtonTagLineContainer>
+        <Button primary large>Lihat Langganan</Button>
+        <Button secondary large>Mulai Kelas Gratis</Button>
+      </ButtonTagLineContainer>
 
     </Container>
   )

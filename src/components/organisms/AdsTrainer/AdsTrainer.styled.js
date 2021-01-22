@@ -2,13 +2,18 @@ import styled from 'styled-components'
 import { mq } from '../../../assets/styles/theme'
 import { globalTheme } from "../../../assets/styles/theme";
 
-export const AdsTrainerStyled = styled.div`
+export const Section = styled.section`
+  position: relative;
+`
+
+export const AdsTrainerStyled = styled.section`
   display: flex;
   background: linear-gradient(90.08deg, #01E284 0.07%, #01DDBF 100.9%);
   margin: 80px 100px;
   border-radius: 20px;
   flex-direction: row;
   padding: 40px 100px;
+  z-index: 10;
 
   ${mq({
     flexDirection: [null, null, null, null, 'column'],
@@ -115,4 +120,12 @@ export const AdsTrainerStyled = styled.div`
     })}
     
   }
+`
+
+export const Line = styled.hr`
+  position: absolute;
+  width: 100%;
+  background-color: #626262;
+  bottom: 100px;
+  z-index: -1;
 `
