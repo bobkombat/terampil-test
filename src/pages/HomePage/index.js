@@ -11,6 +11,8 @@ import Collaboration from 'components/organisms/Collaboration';
 import PopularTrainer from 'components/organisms/PopularTrainer/PopularTrainer';
 import UniqueValue from 'components/organisms/UniqueValue';
 import Cooperation from 'components/organisms/Cooperation';
+import Testimoni from 'components/organisms/Testimoni';
+import NewTraining from 'components/organisms/NewTraining';
 
 export default function HomePage() {
   // SEO metadata
@@ -45,7 +47,9 @@ export default function HomePage() {
       <PopularTrainer />
       <UniqueValue />
       <Cooperation />
+      <NewTraining />
       <AdsTrainer />
+      <Testimoni />
       <Headers />
     </PageLayout>
   );
