@@ -9,6 +9,13 @@ export const globalTheme = {
     gray: '#1d1d1d',
     white: '#fdfdfd',
   },
+  breakpoints: {
+    xl: '(max-width: 1441px)',
+    lg: '(max-width: 1281px)',
+    md: '(max-width: 993px)',
+    sm: '(max-width: 769px)',
+    xs: '(max-width: 577px)',
+  },
 };
 
 // Media query template
