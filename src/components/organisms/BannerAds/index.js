@@ -19,7 +19,7 @@ export const BannerAds = () => {
                 </div>
             </Content>
             <div className='side'>
-                <img src={logo} alt={'Logo Terampil'}/>
+                <img className='small' src={logo} alt={'Logo Terampil'}/>
             </div>
         </Container>
     )
