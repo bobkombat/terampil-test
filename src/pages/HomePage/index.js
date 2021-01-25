@@ -34,7 +34,6 @@ export default function HomePage() {
         <header className="App-header">
           <TagLine />
           <BannerAds />
-
           <Video
             light
             loop

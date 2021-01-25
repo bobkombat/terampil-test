@@ -13,6 +13,7 @@ export const Container = styled.section`
 export const ContainerCard = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
 
   @media screen and ${(props) => props.theme.breakpoints.sm} {
     /* display: grid;
