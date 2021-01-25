@@ -41,14 +41,14 @@ export default function HomePage() {
             style={{ width: '100%' }}
             url="https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/360/Big_Buck_Bunny_360_10s_1MB.mp4"
           />
-          <PopolarTraining />
-          <Collaboration />
           <PopularTrainer />
+          <Collaboration />
+          <Testimoni />
           <NewTraining />
-          <AdsTrainer />
           <UniqueValue />
           <Cooperation />
-          <Testimoni />
+          <AdsTrainer />
+          <PopolarTraining />
           <FAQ />
         </header>
       </div>
