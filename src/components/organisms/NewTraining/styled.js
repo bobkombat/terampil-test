@@ -5,6 +5,7 @@ export const Container = styled.section`
   background-color: #202020;
   box-sizing: border-box;
   padding: 70px 0;
+  position: relative;
 
   .button-slider {
     display: flex;

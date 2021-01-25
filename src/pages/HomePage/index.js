@@ -19,6 +19,8 @@ import { BannerAds } from '../../components/organisms/BannerAds';
 import FAQ from '../../components/organisms/FAQ';
 import ForumTeraktif from 'components/organisms/ForumTeraktif';
 
+import VideoAdds from 'components/organisms/VideoAdds';
+
 export default function HomePage() {
   // SEO metadata
   const seo = {
@@ -34,23 +36,18 @@ export default function HomePage() {
       <div className="App">
         <header className="App-header">
           <TagLine />
+          <VideoAdds />
           <BannerAds />
+          <Video />
           <ForumTeraktif />
-          <Video
-            light
-            loop
-            playing
-            style={{ width: '100%' }}
-            url="https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/360/Big_Buck_Bunny_360_10s_1MB.mp4"
-          />
-          <PopolarTraining />
-          <Collaboration />
           <PopularTrainer />
+          <Collaboration />
+          <Testimoni />
           <NewTraining />
-          <AdsTrainer />
           <UniqueValue />
           <Cooperation />
-          <Testimoni />
+          <AdsTrainer />
+          <PopolarTraining />
           <FAQ />
         </header>
       </div>

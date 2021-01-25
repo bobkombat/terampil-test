@@ -4,14 +4,14 @@ export const Container = styled.section`
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin: 70px auto;
+  margin: 50px auto;
   padding: 30px 30px;
   box-sizing: border-box;
-  /* position: relative; */
 `;
 
 export const ContainerSlide = styled.div`
   position: relative;
+  margin-top: -5rem;
 `;
 
 export const ButtonSlider = styled.div`
@@ -37,7 +37,7 @@ export const Title = styled.h2`
   text-align: center;
   color: #fdfdfd;
   margin: 0 0px 30px;
-  padding: 30px 0 80px 0;
+  padding: 30px 0 50px 0;
   @media screen and ${(props) => props.theme.breakpoints.xs} {
     font-size: 25px;
     padding: 30px 0 40px 0;
@@ -48,7 +48,8 @@ export const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin: 30px 0;
+  /* margin: 160px; */
+  margin-top: 50px;
   padding: 0 100px;
   /* position: relative; */
 `;

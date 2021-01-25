@@ -82,8 +82,8 @@ function NewTraining(props) {
         </div>
         <ContainerCard>
           <Slider
-            next="new-prev-training"
-            prev="new-next-training"
+            next="new-next-training"
+            prev="new-prev-training"
             pagination="new-training"
             count={3}
           >

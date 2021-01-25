@@ -9,6 +9,8 @@ export const Container = styled.footer`
   margin: 30px auto;
   padding: 10px 100px;
   box-sizing: border-box; */
+  padding-bottom: 20px;
+  height: 25vh;
 
   display: flex;
   justify-content: space-around;

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
+  CardContainer,
   ContainerTestimoni,
   JobProfile,
   Testimoni,
@@ -10,8 +11,8 @@ import {
 function CardTestimoni(props) {
   const { testimoni } = props;
   return (
-    <>
-      <ImageTestimoni image={testimoni?.src}></ImageTestimoni>
+    <CardContainer>
+      <ImageTestimoni image={testimoni?.src} />
       <ContainerTestimoni>
         <Testimoni>{testimoni.testimoni}</Testimoni>
         <div>
@@ -19,7 +20,7 @@ function CardTestimoni(props) {
           <JobProfile>{testimoni.job}</JobProfile>
         </div>
       </ContainerTestimoni>
-    </>
+    </CardContainer>
   );
 }
 
