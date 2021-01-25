@@ -37,18 +37,19 @@ export default function HomePage() {
         <header className="App-header">
           <TagLine />
           <VideoAdds />
-          <BannerAds />
-          <Video />
-          <ForumTeraktif />
-          <PopularTrainer />
           <Collaboration />
-          <Testimoni />
-          <NewTraining />
+          <PopularTrainer />
           <UniqueValue />
           <Cooperation />
-          <AdsTrainer />
           <PopolarTraining />
+          <BannerAds />
+          <ForumTeraktif />
+          <NewTraining />
+          <Testimoni />
           <FAQ />
+          <AdsTrainer />
+
+
         </header>
       </div>
     </PageLayout>
