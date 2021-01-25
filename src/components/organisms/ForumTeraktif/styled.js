@@ -35,10 +35,15 @@ export const Title = styled.h2`
   color: #fdfdfd;
   margin: 0;
   padding: 30px 0;
+  margin-top: 5rem;
+
+  @media screen and ${(props) => props.theme.breakpoints.sm} {
+    margin-top: 2rem;
+    padding: 15px 0;
+  }
 
   @media screen and ${(props) => props.theme.breakpoints.xs} {
     font-size: 25px;
-    padding: 30px 0 40px 0;
   }
 `;
 

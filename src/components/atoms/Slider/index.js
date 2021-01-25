@@ -15,7 +15,17 @@ import 'swiper/components/effect-fade/effect-fade.scss';
 SwiperCore.use([Navigation, Pagination, EffectFade]);
 
 const Slider = (props) => {
-  const { trainerImage, component, children, prev, next, count = 4, pagination, ...rest } = props;
+  const {
+    slidePerGroup,
+    trainerImage,
+    component,
+    children,
+    prev,
+    next,
+    count = 4,
+    pagination,
+    ...rest
+  } = props;
   console.log(prev, next);
   return (
     <StyledSlider>

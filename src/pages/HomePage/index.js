@@ -34,9 +34,8 @@ export default function HomePage() {
       <div className="App">
         <header className="App-header">
           <TagLine />
-          <ForumTeraktif />
           <BannerAds />
-
+          <ForumTeraktif />
           <Video
             light
             loop
