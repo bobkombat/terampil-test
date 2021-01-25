@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {mq} from "../../../assets/styles/theme";
 
 export const Container = styled.section`
   display: flex;
@@ -13,11 +14,23 @@ export const Container = styled.section`
     align-items: center;
   }
   
+  .small {
+    width: 44px;
+    height: 66px;
+    margin-top: -80px;
+  }
 `
 
 export const Content = styled.div`
   display: flex;
   flex: 4;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  ${mq({
+    flexDirection: [null, null, null, null, 'column'],
+    justifyContent: [null, null, null, null, 'space-between']
+  })}
   
   .text {
     display: flex;
@@ -44,6 +57,10 @@ export const Content = styled.div`
     float: left;
     color: #000000;
     text-align: left;
+    
+    ${mq({
+      fontSize: [null, null, null, null, '16px']
+    })}
   }
 
   .subtitle {
@@ -58,5 +75,9 @@ export const Content = styled.div`
     color: #000000;
     text-align: left;
 
+    ${mq({
+      fontSize: [null, null, null, null, '14px'],
+      margin: [null, null, null, null, '0']
+    })}
   }
 `
