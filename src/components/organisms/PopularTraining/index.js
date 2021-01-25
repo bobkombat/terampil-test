@@ -127,7 +127,7 @@ export const PopolarTraining = () => {
   return (
     <Container>
       <h1>Ketegori Kelas</h1>
-
+      {/*Categories*/}
       <div className="slider">
         <CardContainer>
           <Slider next="next-category" prev="prev-category" count={7}>
@@ -172,6 +172,7 @@ export const PopolarTraining = () => {
         </div>
       </div>
 
+      {/*Training*/}
       <div className="slider">
         <div className="button-slider">
           <SliderControlPrimary className="prev-primary" id="prev-training">
@@ -202,14 +203,12 @@ export const PopolarTraining = () => {
           </SliderControlPrimary>
         </div>
 
-        {/* <CardContainer> */}
-
         <CardContainer>
-          <Slider next="next-category" prev="prev-category" count={7}>
-            {categories.map((category, index) => {
+          <Slider next="next-training" prev="prev-training" pagination="training-popular">
+            {trainings.map((training, index) => {
               return (
                 <SwiperSlide>
-                  <CategoryText selected={selectedCategory === category}>{category}</CategoryText>
+                  <CardTraining training={training} />
                 </SwiperSlide>
               );
             })}

@@ -5,22 +5,22 @@ export const Container = styled.div`
   height: 420px;
   display: flex;
   flex-direction: column;
-  margin: 20px 10px;
+  margin: 10px 20px;
 
   video[poster] {
-    width: inherit;
+    width: 100%;
     object-fit: cover;
   }
 `;
 
 export const VideoPlayer = styled.video`
-  width: auto;
+  width: 100%;
   height: 300px;
   border-radius: 20px;
 `;
 
 export const Title = styled.h6`
-  width: 400px;
+  width: 100%;
   font-family: Archivo;
   font-size: 20px;
   font-weight: bold;

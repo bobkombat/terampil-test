@@ -4,7 +4,22 @@ export const Container = styled.section`
   width: 100%;
   background-color: #202020;
   box-sizing: border-box;
-  padding: 70px 90px;
+  padding: 70px 0;
+
+  .button-slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .slider {
+    position: relative;
+  }
   @media screen and ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
   }
@@ -14,7 +29,7 @@ export const ContainerCard = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
+  padding: 0 100px;
   @media screen and ${(props) => props.theme.breakpoints.sm} {
     /* display: grid;
     grid-auto-row: auto auto auto; */
