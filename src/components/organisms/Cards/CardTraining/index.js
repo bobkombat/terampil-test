@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
-import {CardTrainingStyled} from "./CardTraining.styled";
-import image from '../../../../assets/png/Rectangle 4.png'
+import {CardTrainingStyled, Flag} from "./CardTraining.styled";
 import star from '../../../../assets/png/star.png'
 import bookmark from '../../../../assets/png/bookmark.png'
 import bookmarked from '../../../../assets/png/bookmarked.png'
@@ -13,7 +12,7 @@ export const CardTraining = (props) => {
     <CardTrainingStyled>
 
       <div className='cover-container'>
-        <span className='flag'>Collaboration with Telkom</span>
+        <Flag collab>Collaboration with Telkom</Flag>
           <div className='bookmark-container'>
             <img className='bookmark' src={isBookmarked ? bookmarked : bookmark} alt='Button Bookmark' />
           </div>

@@ -196,7 +196,7 @@ export const PopolarTraining = () => {
                         {trainings.map((training, index) => {
                             return (
                                 <SwiperSlide>
-                                    <CardTraining training={training}/>
+                                    <CardTraining collab={true} training={training}/>
                                 </SwiperSlide>
                             );
                         })}

@@ -13,21 +13,6 @@ export const CardTrainingStyled = styled.div`
     margin-bottom: 12px;
   }
   
-  .flag {
-    padding: 10px 8px;
-    background-color: #00DEBF;
-    font-family: Inter,serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 17px;
-    color: #141414;
-    position: absolute;
-    left: 8px;
-    bottom: 8px;
-    border-radius: 5px;
-  }
-  
   .bookmark {
     width: 15px;
     height: 18px;
@@ -120,4 +105,19 @@ export const CardTrainingStyled = styled.div`
     float: left;
     margin-right: 10px;
   }
+`
+
+export const Flag = styled.div`
+  padding: 10px 8px;
+  background-color: ${props => props.collab ? '#F18F01' : '#00DEBF'};
+  font-family: Inter,serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #141414;
+  position: absolute;
+  left: 8px;
+  bottom: 8px;
+  border-radius: 5px;
 `

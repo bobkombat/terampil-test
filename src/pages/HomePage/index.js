@@ -33,24 +33,27 @@ export default function HomePage() {
       <div className="App">
         <header className="App-header">
           <TagLine />
-          <BannerAds />
-
           <Video
-            light
-            loop
-            playing
-            style={{ width: '100%' }}
-            url="https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/360/Big_Buck_Bunny_360_10s_1MB.mp4"
+              light
+              loop
+              playing
+              style={{ width: '100%' }}
+              url="https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/360/Big_Buck_Bunny_360_10s_1MB.mp4"
           />
-          <PopolarTraining />
           <Collaboration />
           <PopularTrainer />
-          <NewTraining />
-          <AdsTrainer />
           <UniqueValue />
           <Cooperation />
+          <PopolarTraining />
+          <BannerAds />
+
+          {/*Forum Interaktif*/}
+
+          <NewTraining />
           <Testimoni />
           <FAQ />
+          <AdsTrainer />
+
         </header>
       </div>
     </PageLayout>
