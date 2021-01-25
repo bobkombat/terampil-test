@@ -15,9 +15,9 @@ import Button from '../../atoms/Button/index';
 const PointUniqeTerampil = [
   { src: IconVector, message: '150+ Kelas Online' },
   { src: IconVector, message: '50+ Pengajar Profesional' },
-  { src: IconVector, message: '150+ Kelas Online' },
-  { src: IconVector, message: '50+ Pengajar Profesional' },
-  { src: IconVector, message: '150+ Kelas Online' },
+  { src: IconVector, message: '2+ Kelas baru setiap minggu' },
+  { src: IconVector, message: 'Sertfikat yang sudah direview oleh kampus terkenal di Indonesia' },
+  { src: IconVector, message: 'Download dan nikmati secara offline' },
 ];
 function UniqueTitle(props) {
   return (

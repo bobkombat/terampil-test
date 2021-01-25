@@ -1,17 +1,18 @@
 import styled from 'styled-components';
 
-export const CardContainer = styled.div``;
+export const CardContainer = styled.div`
+  position: relative;
+  margin-top: 60px;
+`;
 export const ImageTestimoni = styled.div`
-  width: 366px;
+  width: 20rem;
   height: 427px;
   background-image: url('${(props) => props.image}');
   background-size: cover;
   border-radius: 20px;
-  position: absolute;
-  top: -80px;
-  left: 120px;
-  z-index: 1;
-
+  position: relative;
+  top: -60px;
+  left: -70px;
   @media screen and ${(props) => props.theme.breakpoints.sm} {
     top: -80px;
     left: 30px;
@@ -28,16 +29,17 @@ export const ImageTestimoni = styled.div`
 export const ContainerTestimoni = styled.div`
   width: 743px;
   height: 392px;
-  padding: 53px 43px 52px 244px;
+  padding: 40px 43px 52px 240px;
   border-radius: 20px;
   background-color: #202020;
   box-sizing: border-box;
   position: relative;
-  right: -80px;
+  right: -30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   z-index: -1;
+  margin-top: -25rem;
 
   @media screen and ${(props) => props.theme.breakpoints.sm} {
     right: 0;

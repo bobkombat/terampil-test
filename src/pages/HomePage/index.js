@@ -17,6 +17,9 @@ import NewTraining from 'components/organisms/NewTraining';
 import { PopolarTraining } from '../../components/organisms/PopularTraining';
 import { BannerAds } from '../../components/organisms/BannerAds';
 import FAQ from '../../components/organisms/FAQ';
+import ForumTeraktif from 'components/organisms/ForumTeraktif';
+
+import VideoAdds from 'components/organisms/VideoAdds';
 
 export default function HomePage() {
   // SEO metadata
@@ -33,26 +36,19 @@ export default function HomePage() {
       <div className="App">
         <header className="App-header">
           <TagLine />
-          <Video
-              light
-              loop
-              playing
-              style={{ width: '100%' }}
-              url="https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/360/Big_Buck_Bunny_360_10s_1MB.mp4"
-          />
+          <VideoAdds />
           <Collaboration />
           <PopularTrainer />
           <UniqueValue />
           <Cooperation />
           <PopolarTraining />
           <BannerAds />
-
-          {/*Forum Interaktif*/}
-
+          <ForumTeraktif />
           <NewTraining />
           <Testimoni />
           <FAQ />
           <AdsTrainer />
+
 
         </header>
       </div>

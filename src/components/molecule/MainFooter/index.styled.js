@@ -68,6 +68,7 @@ export const Address = styled.p`
   letter-spacing: normal;
   text-align: left;
   color: #fdfdfd;
+  margin: 10px 0;
   @media screen and ${(props) => props.theme.breakpoints.sm} {
     margin: 10px 1px 0 0;
     font-size: 14px;
