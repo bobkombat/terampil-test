@@ -58,7 +58,7 @@ export const Answer = styled.p`
 
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3s ease-in;
+  transition: all 0.5s ease;
 
   padding: 0 28px;
   line-height: 24px;

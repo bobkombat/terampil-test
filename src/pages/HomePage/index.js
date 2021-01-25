@@ -17,6 +17,7 @@ import NewTraining from 'components/organisms/NewTraining';
 import { PopolarTraining } from '../../components/organisms/PopularTraining';
 import { BannerAds } from '../../components/organisms/BannerAds';
 import FAQ from '../../components/organisms/FAQ';
+import ForumTeraktif from 'components/organisms/ForumTeraktif';
 
 import VideoAdds from 'components/organisms/VideoAdds';
 
@@ -37,13 +38,8 @@ export default function HomePage() {
           <TagLine />
           <VideoAdds />
           <BannerAds />
-          {/* <Video
-            light
-            loop
-            playing
-            style={{ width: '100%' }}
-            url="https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/360/Big_Buck_Bunny_360_10s_1MB.mp4"
-          /> */}
+          <Video />
+          <ForumTeraktif />
           <PopularTrainer />
           <Collaboration />
           <Testimoni />
