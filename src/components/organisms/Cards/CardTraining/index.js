@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
-import {CardTrainingStyled} from "./CardTraining.styled";
-import image from '../../../../assets/png/Rectangle 4.png'
+import {CardTrainingStyled, Flag} from "./CardTraining.styled";
 import star from '../../../../assets/png/star.png'
 import bookmark from '../../../../assets/png/bookmark.png'
 import bookmarked from '../../../../assets/png/bookmarked.png'
@@ -12,8 +11,14 @@ export const CardTraining = (props) => {
   return (
     <CardTrainingStyled>
       <div className="cover-container">
-        <span className="flag">Collaboration with Telkom</span>
-        <div className="bookmark-container">
+        {training.review != null &&
+          < Flag review>Reviewed by {training.review}</Flag>
+        }
+        {training.collaboration != null &&
+          < Flag collab>Collaboration with {training.collaboration}</Flag>
+        }
+        <div className="bookmark-container"
+             onClick={() => setBookmark(prevBookmark => !prevBookmark)}>
           <img
             className="bookmark"
             src={isBookmarked ? bookmarked : bookmark}
