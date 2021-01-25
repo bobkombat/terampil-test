@@ -17,11 +17,28 @@ export const Container = styled.section`
     color: #FDFDFD;
   }
   
+  .button-slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .slider {
+    position: relative;
+    margin-bottom: 8px;
+  }
+  
 `;
 
 export const CardContainer = styled.div`
   padding: 0 100px;
   justify-content: center;
+  vertical-align: center;
   align-items: center;
   
   ${mq({
@@ -30,14 +47,22 @@ export const CardContainer = styled.div`
   
 `
 
+export const CategoryContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+`
+
 export const CategoryText = styled.a`
+  flex: 1;
   font-family: Inter,serif;
   font-style: normal;
   font-weight: ${props => props.selected ? 'bold' : 'normal'};
   font-size: 16px;
   line-height: 19px;
   text-align: center;
-
+  
   color: ${props => props.selected ? '#00DEBF' : '#C4C4C4'};
   margin: 0 10px;
   cursor: pointer;
