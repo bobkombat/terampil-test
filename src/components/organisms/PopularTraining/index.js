@@ -109,7 +109,7 @@ export const PopolarTraining = () => {
     return (
         <Container>
             <h1>Ketegori Kelas</h1>
-
+            {/*Categories*/}
             <div className='slider'>
                 <CardContainer>
 
@@ -156,6 +156,7 @@ export const PopolarTraining = () => {
                 </div>
             </div>
 
+            {/*Training*/}
             <div className='slider'>
 
                 <div className='button-slider' >
