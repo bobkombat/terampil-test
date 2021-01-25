@@ -5,7 +5,7 @@ export const Container = styled.div`
   height: 420px;
   display: flex;
   flex-direction: column;
-  padding: 20px 10px;
+  margin: 20px 10px;
 
   video[poster] {
     width: inherit;
