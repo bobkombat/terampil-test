@@ -125,7 +125,7 @@ export const AdsTrainerStyled = styled.section`
 export const Line = styled.hr`
   position: absolute;
   width: 100%;
-  background-color: #626262;
+  border-color: #626262;
   bottom: 100px;
   z-index: -1;
 `

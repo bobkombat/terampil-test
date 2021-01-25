@@ -6,6 +6,21 @@ export const Container = styled.section`
   background-color: #202020;
   padding: 40px 0;
 
+  .button-slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .slider {
+    position: relative;
+    margin-bottom: 8px;
+  }
 `;
 
 export const Title = styled.div`

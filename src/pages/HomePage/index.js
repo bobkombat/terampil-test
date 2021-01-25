@@ -38,7 +38,6 @@ export default function HomePage() {
           <TagLine />
           <VideoAdds />
           <Collaboration />
-          <Video />
           <PopularTrainer />
           <UniqueValue />
           <Cooperation />
@@ -49,6 +48,8 @@ export default function HomePage() {
           <Testimoni />
           <FAQ />
           <AdsTrainer />
+
+
         </header>
       </div>
     </PageLayout>
