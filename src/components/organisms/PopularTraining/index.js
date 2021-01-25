@@ -22,6 +22,7 @@ const trainings = [
       name: 'Suci Wijayanti, CBHA, BBT, ACC, Amd. Ing',
     },
     cover: training1,
+    review: 'UGM'
   },
   {
     title: 'Silence & Curiosity: A Guide to Self-Reflection and Self-Discov..',
@@ -36,6 +37,7 @@ const trainings = [
       name: 'Suci Wijayanti, CBHA, BBT, ACC, Amd. Ing',
     },
     cover: training3,
+    collaboration: 'Telkom'
   },
   {
     title: 'Silence & Curiosity: A Guide to Self-Reflection and Self-Discov..',
@@ -57,6 +59,8 @@ const trainings = [
       name: 'Suci Wijayanti, CBHA, BBT, ACC, Amd. Ing',
     },
     cover: training3,
+    collaboration: 'Telkom'
+
   },
   {
     title: 'Silence & Curiosity: A Guide to Self-Reflection and Self-Discov..',
@@ -92,6 +96,7 @@ const trainings = [
       name: 'Suci Wijayanti, CBHA, BBT, ACC, Amd. Ing',
     },
     cover: training2,
+    review: 'UGM'
   },
   {
     title: 'Silence & Curiosity: A Guide to Self-Reflection and Self-Discov..',
@@ -134,7 +139,7 @@ export const PopolarTraining = () => {
             {categories.map((category, index) => {
               return (
                 <SwiperSlide>
-                  <CategoryContainer>
+                  <CategoryContainer onClick={() => setSelectedCategory(category)}>
                     <CategoryText selected={selectedCategory === category}>{category}</CategoryText>
                   </CategoryContainer>
                 </SwiperSlide>

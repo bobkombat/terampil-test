@@ -9,7 +9,6 @@ export const TagLineStyled = styled.h1`
   font-weight: bold;
   text-align: center;
   color: #FDFDFD;
-  margin-top: 96px;
   z-index: 2;
   font-family: Archivo,serif;
   
@@ -32,6 +31,7 @@ export const Container = styled.section`
   position: relative;
   align-items: center;
   justify-content: center;
+  margin-top: 3em;
 `;
 
 export const SubTagLine = styled.p`

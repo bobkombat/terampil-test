@@ -37,7 +37,7 @@ const Slider = (props) => {
           el: `#${pagination}`,
         }}
         style={{ padding: '0 0px' }}
-        slidesPerGroup={4}
+        slidesPerGroup={count}
         draggable={false}
         speed={700}
         allowTouchMove={false}
