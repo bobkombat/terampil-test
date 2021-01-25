@@ -7,8 +7,12 @@ function MobileLink(props) {
   return (
     <Container>
       <Title>Mobile</Title>
-      <img src={LogoMobile2} alt="logoAndroin" />
-      <img style={{ width: '182px', height: '72px' }} src={LogoMobile} alt="logoAndroin" />
+      <img style={{ width: '182px', height: '72px' }} src={LogoMobile2} alt="logoAndroin" />
+      <img
+        style={{ width: '182px', height: '72px', backgroundPosition: 'cover' }}
+        src={LogoMobile}
+        alt="logoAndroin"
+      />
     </Container>
   );
 }

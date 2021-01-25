@@ -32,6 +32,12 @@ export const Title = styled.h6`
   text-align: left;
   color: #fdfdfd;
   margin: 0 0 20px 0;
+
+  @media screen and ${(props) => props.theme.breakpoints.sm} {
+    margin: 10px 1px 0 0;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
 `;
 
 export const Link = styled.a`
@@ -46,6 +52,10 @@ export const Link = styled.a`
   letter-spacing: normal;
   text-align: left;
   color: #fdfdfd;
+  @media screen and ${(props) => props.theme.breakpoints.sm} {
+    margin: 10px 1px 0 0;
+    font-size: 14px;
+  }
 `;
 
 export const Address = styled.p`
@@ -58,4 +68,8 @@ export const Address = styled.p`
   letter-spacing: normal;
   text-align: left;
   color: #fdfdfd;
+  @media screen and ${(props) => props.theme.breakpoints.sm} {
+    margin: 10px 1px 0 0;
+    font-size: 14px;
+  }
 `;
