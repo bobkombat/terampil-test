@@ -10,6 +10,7 @@ export const ImageTestimoni = styled.div`
   position: absolute;
   top: -80px;
   left: 120px;
+  z-index: 1;
 
   @media screen and ${(props) => props.theme.breakpoints.sm} {
     top: -80px;

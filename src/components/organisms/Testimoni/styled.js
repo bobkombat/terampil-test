@@ -29,6 +29,7 @@ export const Title = styled.h2`
 
 export const CardContainer = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   margin: 30px 0;
   position: relative;
