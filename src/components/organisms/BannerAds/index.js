@@ -1,11 +1,13 @@
 import React from 'react';
 import {Container, Content} from "./BannerAds.styled";
+import logo from '../../../assets/png/terampil.png'
+import Button from "../../atoms/Button";
 
 export const BannerAds = () => {
     return (
         <Container>
             <div className='side'>
-                a
+                <img src={logo} alt={'Logo Terampil'}/>
             </div>
             <Content>
                 <div className='text'>
@@ -13,11 +15,11 @@ export const BannerAds = () => {
                     <h2 className='subtitle'>Free selama 7 hari</h2>
                 </div>
                 <div className='button'>
-                    ijed
+                    <Button white large>START FREE TRAIL</Button>
                 </div>
             </Content>
             <div className='side'>
-                a
+                <img src={logo} alt={'Logo Terampil'}/>
             </div>
         </Container>
     )

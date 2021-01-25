@@ -7,7 +7,10 @@ export const Container = styled.section`
   background: linear-gradient(90deg, #00E282 0%, #00DDC0 100%);
   
   .side {
+    display: flex;
     flex: 1;
+    justify-content: center;
+    align-items: center;
   }
   
 `
@@ -25,7 +28,9 @@ export const Content = styled.div`
 
   .button {
     flex: 1;
-    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .title {
