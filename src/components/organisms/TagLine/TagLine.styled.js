@@ -59,6 +59,7 @@ export const ButtonTagLineContainer = styled.div`
   margin-bottom: 78px;
   @media screen and (max-width: 438px) {
     flex-direction: column;
+    margin-bottom: 20px;
   }
 `;
 
