@@ -14,6 +14,7 @@ import { CardTraining } from '../Cards/CardTraining';
 import { SwiperSlide } from 'swiper/react';
 import { SliderControlPrimary } from '../../atoms/Slider/Slider.styled';
 import { SliderPagination } from '../PopularTrainer/PopularTrainer.styled';
+import PopularTrainer from '../PopularTrainer';
 
 const trainings = [
   {

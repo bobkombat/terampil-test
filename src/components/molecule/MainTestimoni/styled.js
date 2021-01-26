@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const CardContainer = styled.div`
   position: relative;
-  margin-top: 60px;
+  margin: 60px 20px 10px;
 `;
 export const ImageTestimoni = styled.div`
   width: 20rem;

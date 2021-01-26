@@ -24,9 +24,10 @@ const Slider = (props) => {
     next,
     count = 4,
     pagination,
+    mobile = false,
     ...rest
   } = props;
-  console.log(prev, next);
+  console.log(mobile, 'oawenfoiwefnoin');
   return (
     <StyledSlider>
       <Swiper

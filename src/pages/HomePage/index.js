@@ -1,26 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import PageLayout from 'components/organisms/PageLayout';
-import './App.css';
-import '../../index.css';
+
 // component
 import {
   VideoAdds,
   TagLine,
-  Headers,
   Collaboration,
-  PopularTraining,
   UniqueValue,
   PopularTrainer,
   ForumTeraktif,
-  NewTraining,
-  Testimoni,
   FAQ,
   AdsTrainer,
   Cooperation,
   BannerAds,
+  PopularTraining,
+  NewTraining,
+  Testimoni,
 } from 'components/organisms';
+import { checkMobile } from 'utils/checkMobile';
 
 export default function HomePage() {
+  const [isMobile, setIsMobile] = useState(false);
+
   // SEO metadata
   const seo = {
     title: 'Beranda',
@@ -29,26 +30,25 @@ export default function HomePage() {
     canonical: null,
   };
 
+  useEffect(() => {
+    setIsMobile(checkMobile());
+  }, []);
+
   return (
-    <PageLayout seo={seo}>
-      <Headers />
-      <div className="App">
-        <header className="App-header">
-          <TagLine />
-          <VideoAdds />
-          <Collaboration />
-          <PopularTrainer />
-          <UniqueValue />
-          <Cooperation />
-          <PopularTraining />
-          <BannerAds />
-          <ForumTeraktif />
-          <NewTraining />
-          <Testimoni />
-          <FAQ />
-          <AdsTrainer />
-        </header>
-      </div>
+    <PageLayout seo={seo} mobile={isMobile}>
+      <TagLine />
+      <VideoAdds />
+      <Collaboration />
+      <PopularTrainer mobile={isMobile} />
+      <UniqueValue />
+      <Cooperation />
+      <PopularTraining mobile={isMobile} />
+      <BannerAds />
+      <ForumTeraktif />
+      <NewTraining mobile={isMobile} />
+      <Testimoni mobile={isMobile} />
+      <FAQ />
+      <AdsTrainer />
     </PageLayout>
   );
 }
