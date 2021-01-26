@@ -1,8 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Container, Title, Link } from './index.styled';
 
-function SocialMediaLink(props) {
+function SocialMediaLink() {
   return (
     <Container>
       <Title>Social Media</Title>
@@ -12,7 +11,5 @@ function SocialMediaLink(props) {
     </Container>
   );
 }
-
-SocialMediaLink.propTypes = {};
 
 export default SocialMediaLink;

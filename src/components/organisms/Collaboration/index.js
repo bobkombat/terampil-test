@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Container, Image, Text } from './Collaboration.styled';
 import GoogleIcon from '../../../assets/png/image1.png';
 import IBMIcon from '../../../assets/png/image 2.png';
@@ -27,7 +26,7 @@ function Collaboration(props) {
       </div>
       <div className="image-icon">
         {iconColaboratin.map((item, index) => {
-          return <Image src={item.src} alt="logo" />;
+          return <Image src={item.src} alt="logo" key={index} />;
         })}
       </div>
     </Container>

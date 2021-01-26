@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { mq } from 'assets/styles/theme';
 
 export const CardImage = styled.div`
   width: 100%;
@@ -17,10 +16,26 @@ export const CardImage = styled.div`
   background-position: center;
   transition: all 0.1s ease-out;
 
-  ${mq({
-    height: [null, '555px', '455px', '355px', '350px', '250px'],
-    margin: [null, null, null, '0 5px'],
-  })}
+  @media screen and ${(props) => props.theme.breakpoints.xl} {
+    height: 555px;
+  }
+
+  @media screen and ${(props) => props.theme.breakpoints.lg} {
+    height: 455px;
+  }
+
+  @media screen and ${(props) => props.theme.breakpoints.md} {
+    height: 355px;
+    margin: 0 5px;
+  }
+
+  @media screen and ${(props) => props.theme.breakpoints.sm} {
+    height: 550px;
+  }
+
+  @media screen and ${(props) => props.theme.breakpoints.xs} {
+    height: 300px;
+  }
 `;
 
 export const BottomContainer = styled.div`
@@ -49,6 +64,10 @@ export const TitleName = styled.h5`
   font-size: 24px;
   text-align: center;
   color: #ffff;
+
+  @media screen and ${(props) => props.theme.breakpoints.xs} {
+    font-size: 14px;
+  }
 `;
 
 export const Title = styled.p`
@@ -64,4 +83,8 @@ export const Title = styled.p`
   font-size: 16px;
   text-align: center;
   color: #ffffff;
+
+  @media screen and ${(props) => props.theme.breakpoints.xs} {
+    font-size: 12px;
+  }
 `;

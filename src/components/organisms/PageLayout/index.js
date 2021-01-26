@@ -21,7 +21,6 @@ const PageLayout = ({ seo, children }) => {
 };
 
 PageLayout.propTypes = {
-  children: PropTypes.element.isRequired,
   seo: PropTypes.object,
 };
 

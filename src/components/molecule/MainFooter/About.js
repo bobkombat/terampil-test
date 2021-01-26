@@ -1,9 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Container, Link, Address } from './index.styled';
 import LogoIcon from '../../../assets/png/LogoTerampil.png';
 
-function About(props) {
+function About() {
   return (
     <Container>
       <div style={{ textAlign: 'left' }}>
@@ -17,7 +16,5 @@ function About(props) {
     </Container>
   );
 }
-
-About.propTypes = {};
 
 export default About;

@@ -1,5 +1,5 @@
 import React from 'react';
-import Input from './Input';
+import Input from '.';
 
 const Title = { title: 'Atom/Input', componet: Input };
 export default Title;

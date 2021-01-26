@@ -1,9 +1,8 @@
 import React from 'react';
 import SwiperCore, { Navigation, Pagination, EffectFade } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper } from 'swiper/react';
 
 import StyledSlider from './Slider.styled';
-import CardTrainer from 'components/organisms/Cards/CardTrainer';
 
 // Import Swiper styles
 import 'swiper/swiper.scss';
@@ -15,19 +14,7 @@ import 'swiper/components/effect-fade/effect-fade.scss';
 SwiperCore.use([Navigation, Pagination, EffectFade]);
 
 const Slider = (props) => {
-  const {
-    slidePerGroup,
-    trainerImage,
-    component,
-    children,
-    prev,
-    next,
-    count = 4,
-    pagination,
-    mobile = false,
-    ...rest
-  } = props;
-  console.log(mobile, 'oawenfoiwefnoin');
+  const { children, prev, next, count = 4, pagination } = props;
   return (
     <StyledSlider>
       <Swiper
@@ -41,11 +28,7 @@ const Slider = (props) => {
         slidesPerGroup={count}
         draggable={false}
         speed={700}
-<<<<<<< HEAD
-        allowTouchMove={mobile}
-=======
         allowTouchMove={true}
->>>>>>> dcb8f89d6e5443ea4322dcb6b77addad4c7c8afa
       >
         {children}
         <div slot="container-start"></div>

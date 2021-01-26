@@ -1,4 +1,3 @@
-import { mq } from 'assets/styles/theme';
 import styled from 'styled-components';
 
 const StyledSlider = styled.section`
@@ -57,20 +56,31 @@ export const SliderControlPrimary = styled.div`
     visibility: hidden;
   }
 
-  ${mq({
-    '&.next-primary': {
-      width: [null, null, '30px'],
-      height: [null, null, '30px'],
-      right: [null, null, '25px'],
-      bottom: [null, null, '7%'],
-    },
-    '&.prev-primary': {
-      width: [null, null, '30px'],
-      height: [null, null, '30px'],
-      left: [null, null, '25px'],
-      bottom: [null, null, '7%'],
-    },
-  })}
+  @media screen and ${(props) => props.theme.breakpoints.lg} {
+    &.next-primary {
+      width: 30px;
+      height: 30px;
+      right: 25px;
+      bottom: 7%;
+    }
+
+    &.prev-primary {
+      width: 30px;
+      height: 30px;
+      left: 25px;
+      bottom: 7%;
+    }
+  }
+
+  @media screen and ${(props) => props.theme.breakpoints.sm} {
+    &.next-primary {
+      display: none;
+    }
+
+    &.prev-primary {
+      display: none;
+    }
+  }
 `;
 
 export default StyledSlider;

@@ -15,6 +15,8 @@ export const Container = styled.footer`
   display: flex;
   justify-content: space-around;
 
+  font-family: 'Open Sans', sans-serif;
+
   @media screen and ${(props) => props.theme.breakpoints.sm} {
     width: 90%;
     display: grid;

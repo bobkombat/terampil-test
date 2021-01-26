@@ -22,6 +22,7 @@ export const Question = styled.div`
   color: #fdfdfd;
   background-color: #373737;
   border-radius: 10px;
+  text-align: left;
 
   display: flex;
   justify-content: space-between;
@@ -56,6 +57,8 @@ export const Answer = styled.p`
   text-align: left;
   color: #c4c4c4;
 
+  overflow: auto;
+
   max-height: 0;
   overflow: hidden;
   transition: all 0.5s ease;
@@ -70,12 +73,12 @@ export const Answer = styled.p`
   }
 
   &.opened {
-    max-height: 399px;
+    max-height: 499px;
   }
 
-  ${mq({
-    fontSize: [null, null, null, null, '14px'],
-    padding: [null, null, null, null, '0 18px'],
-    lineHeight: [null, null, null, null, '20px'],
-  })}
+  @media screen and ${(props) => props.theme.breakpoints.sm} {
+    font-size: 14px;
+    padding: 0 18px;
+    line-height: 20px;
+  }
 `;

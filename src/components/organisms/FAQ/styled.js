@@ -1,4 +1,3 @@
-import { mq } from 'assets/styles/theme';
 import styled from 'styled-components';
 
 export const Container = styled.section`
@@ -11,11 +10,11 @@ export const Container = styled.section`
     margin: 0 auto;
   }
 
-  ${mq({
-    '.accordion-container': {
-      margin: [null, null, null, null, '0 10px'],
-    },
-  })}
+  @media screen and ${(props) => props.theme.breakpoints.sm} {
+    .accordion-container {
+      margin: 0 10px;
+    }
+  }
 `;
 
 export const Title = styled.h1`

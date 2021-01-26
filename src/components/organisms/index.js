@@ -2,7 +2,7 @@ export { default as VideoAdds } from './VideoAdds';
 export { default as TagLine } from './TagLine';
 export { default as Headers } from './Headers';
 export { default as Collaboration } from './Collaboration';
-export { default as PopularTrainer } from './PopularTrainer/PopularTrainer';
+export { default as PopularTrainer } from './PopularTrainer';
 export { default as UniqueValue } from './UniqueValue';
 export { default as PopularTraining } from './PopularTraining';
 export { default as ForumTeraktif } from './ForumTeraktif';
