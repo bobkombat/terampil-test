@@ -1,17 +1,13 @@
 import React from 'react';
-import { Container, Title } from './index.styled';
-import LogoMobile from '../../../assets/png/image 8.png';
+import { Container, Title, LogoImage } from './index.styled';
+import LogoMobile1 from '../../../assets/png/image 8.png';
 import LogoMobile2 from '../../../assets/png/image 7.png';
 function MobileLink() {
   return (
     <Container>
       <Title>Mobile</Title>
-      <img style={{ width: '182px', height: '72px' }} src={LogoMobile2} alt="logoAndroin" />
-      <img
-        style={{ width: '182px', height: '72px', backgroundPosition: 'cover' }}
-        src={LogoMobile}
-        alt="logoAndroin"
-      />
+      <LogoImage src={LogoMobile2} alt="logoAndroin" />
+      <LogoImage src={LogoMobile1} alt="logoAndroin" />
     </Container>
   );
 }

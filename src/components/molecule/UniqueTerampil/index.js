@@ -41,6 +41,4 @@ function UniqueTitle(props) {
   );
 }
 
-UniqueTitle.propTypes = {};
-
 export default UniqueTitle;

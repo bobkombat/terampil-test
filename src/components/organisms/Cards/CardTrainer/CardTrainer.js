@@ -12,7 +12,4 @@ function CardTrainer(props) {
     </CardImage>
   );
 }
-
-CardTrainer.propTypes = {};
-
 export default CardTrainer;

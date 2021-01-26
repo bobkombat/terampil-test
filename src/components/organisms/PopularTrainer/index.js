@@ -8,7 +8,7 @@ import ImageTrainer2 from '../../../assets/png/Rectangle 4.png';
 import Slider from 'components/atoms/Slider';
 import { SliderControlPrimary } from 'components/atoms/Slider/Slider.styled';
 import { SwiperSlide } from 'swiper/react';
-import CardTrainer from '../Cards/CardTrainer';
+import CardTrainer from 'components/organisms/Cards/CardTrainer/CardTrainer';
 import { checkMobile } from 'utils/checkMobile';
 
 const trainerImage = [

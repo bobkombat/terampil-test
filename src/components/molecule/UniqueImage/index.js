@@ -11,6 +11,4 @@ function UniqueImage(props) {
   );
 }
 
-UniqueImage.propTypes = {};
-
 export default UniqueImage;

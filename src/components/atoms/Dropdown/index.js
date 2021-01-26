@@ -1,6 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import StyledDropwdown from './Dropdown.styled';
+import { Link } from 'react-router-dom';
+
+// Assets Logo
+import EntrepreneurLogo from 'assets/png/Kategori/Etrepreneur - Hijau 2.png';
+import CommunicationLogo from 'assets/png/Kategori/Communication - Hijau 2.png';
+import ITLogo from 'assets/png/Kategori/IT - Hijau 2.png';
+import PersonalLogo from 'assets/png/Kategori/Personal - Hijau 2.png';
+import MarketingSalesLogo from 'assets/png/Kategori/Marketing - Hijau 2.png';
+import DesignLogo from 'assets/png/Kategori/Video - Hijau 2.png';
 
 function Dropdown({ children, ...rest }) {
   return (
@@ -24,18 +33,44 @@ function Dropdown({ children, ...rest }) {
         </div>
         <div className="dropdown-content">
           <div className="first-content">
-            <p className="dropdown-content-1 mb">Entrepreneurship</p>
-            <p className="dropdown-content-1 mb">Marketing &amp; Sales</p>
-            <p className="dropdown-content-1 mb">Communication</p>
-            <p className="dropdown-content-1 mb">IT &amp; Software Development</p>
-            <p className="dropdown-content-1 mb">Personal Development</p>
-            <p className="dropdown-content-1 mb">Design Graphic &amp; Video Editor</p>
+            <Link to="/kategori/entrepreneurship" className="dropdown-content-1 mb">
+              <img src={EntrepreneurLogo} alt="kategori-logo" />
+              Entrepreneurship
+            </Link>
+            <Link to="/kategori/marketing+sales" className="dropdown-content-1 mb">
+              <img src={MarketingSalesLogo} alt="marketing-sales-logo" />
+              Marketing &amp; Sales
+            </Link>
+            <Link to="/kategori/communication" className="dropdown-content-1 mb">
+              <img src={CommunicationLogo} alt="communication-logo" />
+              Communication
+            </Link>
+            <Link to="/kategori/it" className="dropdown-content-1 mb">
+              <img src={ITLogo} alt="IT-logo" />
+              IT &amp; Software Development
+            </Link>
+            <Link to="/kategori/personal" className="dropdown-content-1 mb">
+              <img src={PersonalLogo} alt="personal-development-logo" />
+              Personal Development
+            </Link>
+            <Link to="/kategori/desain" className="dropdown-content-1 mb">
+              <img src={DesignLogo} alt="design-video-logo" />
+              Design Graphic &amp; Video Editor
+            </Link>
           </div>
           <div className="second-content">
-            <p className="dropdown-content-2 mb">Semua Kelas</p>
-            <p className="dropdown-content-2 mb">Rekomendasi</p>
-            <p className="dropdown-content-2 mb">Semua Kelas</p>
-            <p className="dropdown-content-2 mb">Semua Kelas</p>
+            <Link to="/all" className="dropdown-content-2 mb">
+              Semua Kelas
+            </Link>
+            <Link to="/rekomendasi" className="dropdown-content-2 mb">
+              Rekomendasi
+            </Link>
+            <Link to="/populer" className="dropdown-content-2 mb">
+              Populer
+            </Link>
+            <Link to="/terbaru" className="dropdown-content-2 mb">
+              Terbaru
+            </Link>
           </div>
         </div>
       </div>
