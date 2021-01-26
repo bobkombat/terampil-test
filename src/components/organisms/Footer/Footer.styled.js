@@ -16,7 +16,7 @@ export const Container = styled.footer`
   justify-content: space-around;
 
   font-family: 'Open Sans', sans-serif;
-
+  box-sizing: border-box;
   @media screen and ${(props) => props.theme.breakpoints.sm} {
     width: 90%;
     display: grid;
@@ -26,5 +26,9 @@ export const Container = styled.footer`
     column-gap: 20px;
     padding-left: 20px;
     justify-self: center;
+  }
+
+  @media screen and ${(props) => props.theme.breakpoints.sm} {
+    width: 100%;
   }
 `;

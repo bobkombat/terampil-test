@@ -72,3 +72,13 @@ export const Address = styled.p`
     font-size: 14px;
   }
 `;
+
+export const LogoImage = styled.img`
+  width: 100%;
+  height: 72px;
+
+  @media screen and ${(props) => props.theme.breakpoints.sm} {
+    width: 80%;
+    height: 72px;
+  }
+`;
