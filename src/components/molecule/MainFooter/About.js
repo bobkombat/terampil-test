@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Container, Link, Address } from './index.styled';
 import LogoIcon from '../../../assets/png/LogoTerampil.png';
 
@@ -17,7 +16,4 @@ function About(props) {
     </Container>
   );
 }
-
-About.propTypes = {};
-
 export default About;

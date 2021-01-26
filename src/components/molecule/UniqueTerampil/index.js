@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import {
   ContainerTitle,
   Title,
@@ -41,7 +40,5 @@ function UniqueTitle(props) {
     </ContainerTitle>
   );
 }
-
-UniqueTitle.propTypes = {};
 
 export default UniqueTitle;

@@ -1,6 +1,12 @@
 import styled from 'styled-components';
 
-export const H1 = styled.h1.attrs((props) => ({}))`
-  font-size: '60px';
-  font-family: 'Archivo', sans-serif;
+export const Title = styled.h1.attrs((props) => ({}))`
+  font-family: Archivo, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 26px;
+  text-align: center;
+
+  color: #fdfdfd;
 `;

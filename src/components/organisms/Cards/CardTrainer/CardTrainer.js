@@ -1,6 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { CardImage, Image, TitleName, Title, BottomContainer } from './Card.styled';
+import { CardImage, TitleName, Title, BottomContainer } from './Card.styled';
 
 function CardTrainer(props) {
   const { trainer } = props;
@@ -13,7 +12,4 @@ function CardTrainer(props) {
     </CardImage>
   );
 }
-
-CardTrainer.propTypes = {};
-
 export default CardTrainer;

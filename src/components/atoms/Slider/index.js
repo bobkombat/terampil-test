@@ -3,7 +3,7 @@ import SwiperCore, { Navigation, Pagination, EffectFade } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import StyledSlider from './Slider.styled';
-import CardTrainer from 'components/organisms/Cards/CardTrainer';
+import CardTrainer from 'components/organisms/Cards/CardTrainer/CardTrainer';
 
 // Import Swiper styles
 import 'swiper/swiper.scss';

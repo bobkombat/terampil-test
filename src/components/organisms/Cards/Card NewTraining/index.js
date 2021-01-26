@@ -1,7 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Container, VideoPlayer, Title, ProfileName } from './styled';
-import Slider from '../../../atoms/Slider/index';
 
 function CardNewTraining(props) {
   const { newTraining } = props;
@@ -13,7 +11,5 @@ function CardNewTraining(props) {
     </Container>
   );
 }
-
-CardNewTraining.propTypes = {};
 
 export default CardNewTraining;

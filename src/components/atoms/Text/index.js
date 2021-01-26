@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { H1 } from './Text.styled';
+import { Title } from './Text.styled';
 
 function Text({ children, ...rest }) {
-  return <H1 {...rest}>{children}</H1>;
+  return <Title {...rest}>{children}</Title>;
 }
 
 Text.propTypes = {};

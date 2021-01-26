@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import {
   CardContainer,
   ContainerTestimoni,
@@ -23,7 +22,5 @@ function CardTestimoni(props) {
     </CardContainer>
   );
 }
-
-CardTestimoni.propTypes = {};
 
 export default CardTestimoni;
