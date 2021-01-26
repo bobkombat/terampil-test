@@ -14,15 +14,14 @@ export const ImageTestimoni = styled.div`
   top: -60px;
   left: -70px;
   @media screen and ${(props) => props.theme.breakpoints.sm} {
-    top: -80px;
     left: 30px;
   }
 
   @media screen and ${(props) => props.theme.breakpoints.xs} {
-    width: 180px;
-    height: 220px;
-    top: -60px;
-    left: -10px;
+    width: 40%;
+    height: 180px;
+    left: 5px;
+    top: -50px;
   }
 `;
 
@@ -42,6 +41,7 @@ export const ContainerTestimoni = styled.div`
   margin-top: -25rem;
 
   @media screen and ${(props) => props.theme.breakpoints.sm} {
+    width: 100%;
     right: 0;
     padding: 40px 30px 40px 410px;
   }
@@ -49,7 +49,7 @@ export const ContainerTestimoni = styled.div`
   @media screen and ${(props) => props.theme.breakpoints.xs} {
     width: 100%;
     height: 456px;
-    padding: 160px 5px 10px 5px;
+    padding: 160px 5px 10px 175px;
   }
 `;
 
@@ -65,7 +65,7 @@ export const Testimoni = styled.p`
   color: #fdfdfd;
 
   @media screen and ${(props) => props.theme.breakpoints.xs} {
-    font-size: 14px;
+    font-size: 13px;
   }
 `;
 
@@ -82,7 +82,7 @@ export const ProfileTestimoni = styled.h5`
   margin: 0;
 
   @media screen and ${(props) => props.theme.breakpoints.sm} {
-    font-size: 18px;
+    font-size: 16px;
   }
 `;
 

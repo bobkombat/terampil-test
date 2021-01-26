@@ -24,7 +24,7 @@ export const Chat = styled.div`
   align-items: center;
   border-radius: 10px;
 
-  @media screen and ${(props) => props.theme.breakpoints} {
+  @media screen and ${(props) => props.theme.breakpoints.sm} {
     padding: 16px;
   }
 `;

@@ -1,7 +1,7 @@
 import React from 'react';
-import {Container, Content} from "./BannerAds.styled";
-import logo from '../../../assets/png/terampil.png'
-import Button from "../../atoms/Button";
+import { Container, Content } from './BannerAds.styled';
+import logo from '../../../assets/png/terampil.png';
+import Button from '../../atoms/Button';
 
 export const BannerAds = () => {
     return (

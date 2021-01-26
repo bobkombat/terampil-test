@@ -98,6 +98,27 @@ function NewTraining(props) {
         </ContainerCard>
       </div>
       <SliderPagination id="new-training" />
+
+      <ContainerCard style={{ overflowY: 'scroll' }}>
+        <Slider
+          next="new-next-training"
+          prev="new-prev-training"
+          pagination="new-training"
+          count={2}
+          scrollbar={{
+            el: '.swiper-scrollbar',
+            draggable: true,
+          }}
+        >
+          {dataTraining.map((item, i) => {
+            return (
+              <SwiperSlide>
+                <CardNewTraining newTraining={item} key={i} />
+              </SwiperSlide>
+            );
+          })}
+        </Slider>
+      </ContainerCard>
     </Container>
   );
 }

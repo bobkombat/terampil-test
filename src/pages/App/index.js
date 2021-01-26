@@ -1,8 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
-
-import HomePage from 'pages/HomePage';
+import { Login, Register, HomePage } from '../index';
 
 function App() {
   return (
@@ -12,6 +11,8 @@ function App() {
       </Helmet>
       <Switch>
         <Route exact path="/" component={HomePage} />
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/register" component={Register} />
         <Route exact path="/:id" component={HomePage} />
       </Switch>
     </BrowserRouter>

@@ -24,9 +24,10 @@ const Slider = (props) => {
     next,
     count = 4,
     pagination,
+    mobile = false,
     ...rest
   } = props;
-  console.log(prev, next);
+  console.log(mobile, 'oawenfoiwefnoin');
   return (
     <StyledSlider>
       <Swiper
@@ -40,7 +41,11 @@ const Slider = (props) => {
         slidesPerGroup={count}
         draggable={false}
         speed={700}
-        allowTouchMove={false}
+<<<<<<< HEAD
+        allowTouchMove={mobile}
+=======
+        allowTouchMove={true}
+>>>>>>> dcb8f89d6e5443ea4322dcb6b77addad4c7c8afa
       >
         {children}
         <div slot="container-start"></div>

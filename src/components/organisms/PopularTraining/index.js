@@ -14,10 +14,11 @@ import { CardTraining } from '../Cards/CardTraining';
 import { SwiperSlide } from 'swiper/react';
 import { SliderControlPrimary } from '../../atoms/Slider/Slider.styled';
 import { SliderPagination } from '../PopularTrainer/PopularTrainer.styled';
+import PopularTrainer from '../PopularTrainer';
 
 const trainings = [
   {
-    title: 'Spikj1ipilence & Curiosity: A Guide to Self-Reflection and Self-Discov..',
+    title: 'Silence & Curiosity: A Guide to Self-Reflection and Self-Discov..',
     trainer: {
       name: 'Suci Wijayanti, CBHA, BBT, ACC, Amd. Ing',
     },
@@ -37,7 +38,7 @@ const trainings = [
       name: 'Suci Wijayanti, CBHA, BBT, ACC, Amd. Ing',
     },
     cover: training3,
-    collaboration: 'Telkom'
+    collaboration: 'Telkom',
   },
   {
     title: 'Silence & Curiosity: A Guide to Self-Reflection and Self-Discov..',
@@ -52,7 +53,6 @@ const trainings = [
       name: 'Suci Wijayanti, CBHA, BBT, ACC, Amd. Ing',
     },
     cover: training4,
-    collaboration: 'Kementrian Pendidikan'
   },
   {
     title: 'Silence & Curiosity: A Guide to Self-Reflection and Self-Discov..',
@@ -60,8 +60,7 @@ const trainings = [
       name: 'Suci Wijayanti, CBHA, BBT, ACC, Amd. Ing',
     },
     cover: training3,
-    collaboration: 'Telkom'
-
+    collaboration: 'Telkom',
   },
   {
     title: 'Silence & Curiosity: A Guide to Self-Reflection and Self-Discov..',
@@ -97,7 +96,7 @@ const trainings = [
       name: 'Suci Wijayanti, CBHA, BBT, ACC, Amd. Ing',
     },
     cover: training2,
-    review: 'UGM'
+    review: 'UGM',
   },
   {
     title: 'Silence & Curiosity: A Guide to Self-Reflection and Self-Discov..',
@@ -128,7 +127,7 @@ const categories = [
   'Kategori13',
 ];
 
-export const PopolarTraining = () => {
+const PopularTraining = () => {
   const [selectedCategory, setSelectedCategory] = useState('Paling Popular');
   return (
     <Container>
@@ -249,3 +248,5 @@ export const PopolarTraining = () => {
     </Container>
   );
 };
+
+export default PopularTraining;

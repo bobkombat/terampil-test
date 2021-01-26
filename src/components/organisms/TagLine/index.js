@@ -9,7 +9,7 @@ import {
 import Button from '../../atoms/Button';
 import logo from '../../../assets/png/terampil-transparent.png';
 
-export function TagLine() {
+const TagLine = () => {
   return (
     <Container>
       <div style={{ display: 'flex', justifyContent: 'center' }}>
@@ -30,4 +30,6 @@ export function TagLine() {
       </ButtonTagLineContainer>
     </Container>
   );
-}
+};
+
+export default TagLine;

@@ -1,27 +1,24 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import PageLayout from 'components/organisms/PageLayout';
 
-import './App.css';
-import '../../index.css';
-import Headers from 'components/organisms/Headers';
-import { TagLine } from '../../components/organisms/TagLine';
-import { AdsTrainer } from '../../components/organisms/AdsTrainer';
-import Video from 'components/atoms/Video';
-import Collaboration from 'components/organisms/Collaboration';
-import PopularTrainer from 'components/organisms/PopularTrainer/PopularTrainer';
-import { CardTraining } from '../../components/organisms/Cards/CardTraining';
-import UniqueValue from 'components/organisms/UniqueValue';
-import Cooperation from 'components/organisms/Cooperation';
-import Testimoni from 'components/organisms/Testimoni';
-import NewTraining from 'components/organisms/NewTraining';
-import { PopolarTraining } from '../../components/organisms/PopularTraining';
-import { BannerAds } from '../../components/organisms/BannerAds';
-import FAQ from '../../components/organisms/FAQ';
-import ForumTeraktif from 'components/organisms/ForumTeraktif';
-
-import VideoAdds from 'components/organisms/VideoAdds';
+// component
+import {
+  VideoAdds,
+  TagLine,
+  Collaboration,
+  UniqueValue,
+  PopularTrainer,
+  ForumTeraktif,
+  FAQ,
+  AdsTrainer,
+  Cooperation,
+  BannerAds,
+} from 'components/organisms';
+import { checkMobile } from 'utils/checkMobile';
 
 export default function HomePage() {
+  const [isMobile, setIsMobile] = useState(false);
+
   // SEO metadata
   const seo = {
     title: 'Beranda',
@@ -30,28 +27,25 @@ export default function HomePage() {
     canonical: null,
   };
 
+  useEffect(() => {
+    setIsMobile(checkMobile());
+  }, []);
+
   return (
-    <PageLayout seo={seo}>
-      <Headers />
-      <div className="App">
-        <header className="App-header">
-          <TagLine />
-          <VideoAdds />
-          <Collaboration />
-          <PopularTrainer />
-          <UniqueValue />
-          <Cooperation />
-          <PopolarTraining />
-          <BannerAds />
-          <ForumTeraktif />
-          <NewTraining />
-          <Testimoni />
-          <FAQ />
-          <AdsTrainer />
-
-
-        </header>
-      </div>
+    <PageLayout seo={seo} mobile={isMobile}>
+      <TagLine />
+      <VideoAdds />
+      <Collaboration />
+      <PopularTrainer mobile={isMobile} />
+      <UniqueValue />
+      <Cooperation />
+      {/* <PopularTraining mobile={isMobile} /> */}
+      <BannerAds />
+      <ForumTeraktif />
+      {/* <NewTraining mobile={isMobile} /> */}
+      {/* <Testimoni mobile={isMobile} /> */}
+      <FAQ />
+      <AdsTrainer />
     </PageLayout>
   );
 }
