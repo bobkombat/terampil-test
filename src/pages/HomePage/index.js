@@ -13,9 +13,9 @@ import {
   AdsTrainer,
   Cooperation,
   BannerAds,
-  Testimoni,
   PopularTraining,
   NewTraining,
+  Testimoni,
 } from 'components/organisms';
 
 export default function HomePage() {

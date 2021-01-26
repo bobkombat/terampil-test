@@ -27,6 +27,19 @@ export const SliderControlPrimary = styled.div`
     transition: all 0.1s ease-out;
   }
 
+  &.next-secondary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 1%;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    background-color: #1D1D1D;
+    cursor: pointer;
+    transition: all 0.1s ease-out;
+  }
+
   &.prev-primary {
     display: flex;
     align-items: center;

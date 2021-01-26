@@ -126,4 +126,5 @@ export const Line = styled.hr`
   border-color: #626262;
   bottom: 100px;
   z-index: -1;
+  box-sizing: border-box;
 `;
