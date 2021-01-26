@@ -28,7 +28,7 @@ export const Container = styled.section`
   .img-large {
     ${mq({
       width: [null, null, null, null, '44px'],
-      height: [null, null, null, null, '66pxpx']
+      height: [null, null, null, null, '66px']
     })}
   }
 `
@@ -71,7 +71,8 @@ export const Content = styled.div`
     text-align: left;
     
     ${mq({
-      fontSize: [null, null, null, null, '16px']
+      fontSize: [null, null, null, null, '16px'],
+      textAlign: [null, null, null, null, 'center']
     })}
   }
 
@@ -89,7 +90,8 @@ export const Content = styled.div`
 
     ${mq({
       fontSize: [null, null, null, null, '14px'],
-      margin: [null, null, null, null, '0']
+      margin: [null, null, null, null, '0'],
+      textAlign: [null, null, null, null, 'center']
     })}
   }
 `
