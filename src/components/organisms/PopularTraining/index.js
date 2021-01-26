@@ -17,11 +17,11 @@ import { SliderPagination } from '../PopularTrainer/PopularTrainer.styled';
 
 const trainings = [
   {
-    title: 'Silence & Curiosity: A Guide to Self-Reflection and Self-Discov..',
+    title: 'Spikj1ipilence & Curiosity: A Guide to Self-Reflection and Self-Discov..',
     trainer: {
       name: 'Suci Wijayanti, CBHA, BBT, ACC, Amd. Ing',
     },
-    cover: training1,
+    cover: training3,
     review: 'UGM'
   },
   {
@@ -52,6 +52,7 @@ const trainings = [
       name: 'Suci Wijayanti, CBHA, BBT, ACC, Amd. Ing',
     },
     cover: training4,
+    collaboration: 'Kementrian Pendidikan'
   },
   {
     title: 'Silence & Curiosity: A Guide to Self-Reflection and Self-Discov..',
@@ -219,6 +220,29 @@ export const PopolarTraining = () => {
             })}
           </Slider>
         </CardContainer>
+      </div>
+
+      <div className='overlay'>
+        {categories.map((category, index) => {
+          return (
+
+                <CategoryContainer onClick={() => setSelectedCategory(category)}>
+                  <CategoryText selected={selectedCategory === category}>{category}</CategoryText>
+                </CategoryContainer>
+
+          );
+        })}
+      </div>
+
+      <div className="overlay">
+
+
+        {trainings.map((training, index) => {
+          return (
+            <CardTraining training={training} />
+          );
+        })}
+
       </div>
 
       <SliderPagination id="training-popular" />

@@ -7,7 +7,7 @@ export const BannerAds = () => {
     return (
         <Container>
             <div className='side'>
-                <img src={logo} alt={'Logo Terampil'}/>
+                <img className='img-large' src={logo} alt={'Logo Terampil'}/>
             </div>
             <Content>
                 <div className='text'>
@@ -19,7 +19,7 @@ export const BannerAds = () => {
                 </div>
             </Content>
             <div className='side'>
-                <img className='small' src={logo} alt={'Logo Terampil'}/>
+                <img className='img-small' src={logo} alt={'Logo Terampil'}/>
             </div>
         </Container>
     )

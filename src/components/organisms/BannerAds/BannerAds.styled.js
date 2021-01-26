@@ -14,10 +14,22 @@ export const Container = styled.section`
     align-items: center;
   }
   
-  .small {
+  .img-small {
     width: 44px;
     height: 66px;
     margin-top: -80px;
+
+    ${mq({
+      width: [null, null, null, null, '22px'],
+      height: [null, null, null, null, '33px']
+    })}
+  }
+  
+  .img-large {
+    ${mq({
+      width: [null, null, null, null, '44px'],
+      height: [null, null, null, null, '66pxpx']
+    })}
   }
 `
 
