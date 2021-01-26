@@ -77,7 +77,7 @@ export const CategoryText = styled.a`
   white-space: nowrap;
   
   ${mq({
-    fontSize: [null, null, null, null, '12px']
+    fontSize: [null, null, null, '12px', '12px']
   })}
 
 `
