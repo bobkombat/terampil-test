@@ -99,7 +99,7 @@ function NewTraining(props) {
       </div>
       <SliderPagination id="new-training" />
 
-      <ContainerCard style={{ overflowY: 'scroll' }}>
+      {/* <ContainerCard style={{ overflowY: 'scroll' }}>
         <Slider
           next="new-next-training"
           prev="new-prev-training"
@@ -118,7 +118,7 @@ function NewTraining(props) {
             );
           })}
         </Slider>
-      </ContainerCard>
+      </ContainerCard> */}
     </Container>
   );
 }
