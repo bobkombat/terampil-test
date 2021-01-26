@@ -23,6 +23,8 @@ export const Container = styled.section`
   }
   @media screen and ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
+    padding: 30px 0;
+    overflow: scroll;
   }
 `;
 
@@ -32,10 +34,7 @@ export const ContainerCard = styled.div`
   align-items: center;
   padding: 0 100px;
   @media screen and ${(props) => props.theme.breakpoints.sm} {
-    /* display: grid;
-    grid-auto-row: auto auto auto; */
-    overflow-y: scroll;
-    width: 100%;
+    padding: 0;
   }
 `;
 

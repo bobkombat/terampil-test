@@ -40,7 +40,7 @@ const Slider = (props) => {
         slidesPerGroup={count}
         draggable={false}
         speed={700}
-        allowTouchMove={false}
+        allowTouchMove={true}
       >
         {children}
         <div slot="container-start"></div>

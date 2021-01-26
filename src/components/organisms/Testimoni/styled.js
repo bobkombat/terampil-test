@@ -7,6 +7,11 @@ export const Container = styled.section`
   margin: 50px auto;
   padding: 30px 30px;
   box-sizing: border-box;
+
+  @media screen and ${(props) => props.theme.breakpoints.xs} {
+    padding: 30px 5px;
+    margin: 20px auto;
+  }
 `;
 
 export const ContainerSlide = styled.div`
@@ -23,6 +28,10 @@ export const ButtonSlider = styled.div`
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @media screen and ${(props) => props.theme.breakpoints.xs} {
+    display: none;
+  }
 `;
 
 export const Title = styled.h2`
@@ -48,8 +57,10 @@ export const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  /* margin: 160px; */
   margin-top: 50px;
   padding: 0 100px;
-  /* position: relative; */
+
+  @media screen and ${(props) => props.theme.breakpoints.sm} {
+    padding: 0px;
+  }
 `;

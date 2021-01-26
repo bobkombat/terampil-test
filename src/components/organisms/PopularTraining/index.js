@@ -22,7 +22,7 @@ const trainings = [
       name: 'Suci Wijayanti, CBHA, BBT, ACC, Amd. Ing',
     },
     cover: training1,
-    review: 'UGM'
+    review: 'UGM',
   },
   {
     title: 'Silence & Curiosity: A Guide to Self-Reflection and Self-Discov..',
@@ -37,7 +37,7 @@ const trainings = [
       name: 'Suci Wijayanti, CBHA, BBT, ACC, Amd. Ing',
     },
     cover: training3,
-    collaboration: 'Telkom'
+    collaboration: 'Telkom',
   },
   {
     title: 'Silence & Curiosity: A Guide to Self-Reflection and Self-Discov..',
@@ -59,8 +59,7 @@ const trainings = [
       name: 'Suci Wijayanti, CBHA, BBT, ACC, Amd. Ing',
     },
     cover: training3,
-    collaboration: 'Telkom'
-
+    collaboration: 'Telkom',
   },
   {
     title: 'Silence & Curiosity: A Guide to Self-Reflection and Self-Discov..',
@@ -96,7 +95,7 @@ const trainings = [
       name: 'Suci Wijayanti, CBHA, BBT, ACC, Amd. Ing',
     },
     cover: training2,
-    review: 'UGM'
+    review: 'UGM',
   },
   {
     title: 'Silence & Curiosity: A Guide to Self-Reflection and Self-Discov..',
@@ -127,7 +126,7 @@ const categories = [
   'Kategori13',
 ];
 
-export const PopolarTraining = () => {
+const PopularTraining = () => {
   const [selectedCategory, setSelectedCategory] = useState('Paling Popular');
   return (
     <Container>
@@ -225,3 +224,5 @@ export const PopolarTraining = () => {
     </Container>
   );
 };
+
+export default PopularTraining;
