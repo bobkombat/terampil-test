@@ -1,0 +1,14 @@
+export { default as VideoAdds } from './VideoAdds';
+export { default as TagLine } from './TagLine';
+export { default as Headers } from './Headers';
+export { default as Collaboration } from './Collaboration';
+export { default as PopularTrainer } from './PopularTrainer';
+export { default as UniqueValue } from './UniqueValue';
+export { default as PopularTraining } from './PopularTraining';
+export { default as ForumTeraktif } from './ForumTeraktif';
+export { default as NewTraining } from './NewTraining';
+export { default as Testimoni } from './Testimoni';
+export { default as FAQ } from './FAQ';
+export { default as AdsTrainer } from './AdsTrainer';
+export { default as Cooperation } from './Cooperation';
+export { default as BannerAds } from './BannerAds';

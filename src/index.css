@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: bold;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fdfdfd;
+  font-stretch: normal;
+  font-size: 40px;
+  background-color: #000004;
+}
+
+.root-fonts-loaded {
+  font-family: 'Archivo', sans-serif;
+}
+
+.root-fonts-loading {
+  font-family: sans-serif;
+}
