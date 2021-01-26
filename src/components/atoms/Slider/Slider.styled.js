@@ -1,4 +1,3 @@
-import { mq } from 'assets/styles/theme';
 import styled from 'styled-components';
 
 const StyledSlider = styled.section`
@@ -24,6 +23,19 @@ export const SliderControlPrimary = styled.div`
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
     -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+    transition: all 0.1s ease-out;
+  }
+
+  &.next-secondary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 1%;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    background-color: #1D1D1D;
     cursor: pointer;
     transition: all 0.1s ease-out;
   }
@@ -57,20 +69,31 @@ export const SliderControlPrimary = styled.div`
     visibility: hidden;
   }
 
-  ${mq({
-    '&.next-primary': {
-      width: [null, null, '30px'],
-      height: [null, null, '30px'],
-      right: [null, null, '25px'],
-      bottom: [null, null, '7%'],
-    },
-    '&.prev-primary': {
-      width: [null, null, '30px'],
-      height: [null, null, '30px'],
-      left: [null, null, '25px'],
-      bottom: [null, null, '7%'],
-    },
-  })}
+  @media screen and ${(props) => props.theme.breakpoints.lg} {
+    &.next-primary {
+      width: 30px;
+      height: 30px;
+      right: 25px;
+      bottom: 7%;
+    }
+
+    &.prev-primary {
+      width: 30px;
+      height: 30px;
+      left: 25px;
+      bottom: 7%;
+    }
+  }
+
+  @media screen and ${(props) => props.theme.breakpoints.sm} {
+    &.next-primary {
+      display: none;
+    }
+
+    &.prev-primary {
+      display: none;
+    }
+  }
 `;
 
 export default StyledSlider;

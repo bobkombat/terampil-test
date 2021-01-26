@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Link, Address } from './index.styled';
 import LogoIcon from '../../../assets/png/LogoTerampil.png';
 
-function About(props) {
+function About() {
   return (
     <Container>
       <div style={{ textAlign: 'left' }}>

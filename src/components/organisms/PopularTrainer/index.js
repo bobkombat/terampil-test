@@ -9,6 +9,7 @@ import Slider from 'components/atoms/Slider';
 import { SliderControlPrimary } from 'components/atoms/Slider/Slider.styled';
 import { SwiperSlide } from 'swiper/react';
 import CardTrainer from 'components/organisms/Cards/CardTrainer/CardTrainer';
+import { checkMobile } from 'utils/checkMobile';
 
 const trainerImage = [
   { name: 'Nama Trainer yaya', title: 'Ceo STARUP', src: ImageTrainer },
@@ -25,7 +26,45 @@ const trainerImage = [
 ];
 
 function PopularTrainer({ mobile }) {
-  console.log(mobile, 'from popular trainer');
+  function renderSlider() {
+    if (checkMobile()) {
+      return (
+        <Slider
+          next="next-trainer"
+          prev="prev-trainer"
+          pagination="trainer-popular"
+          mobile={mobile}
+          count={2}
+        >
+          {trainerImage.map((trainer, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <CardTrainer trainer={trainer} next="next-trainer" prev="prev-trainer" />
+              </SwiperSlide>
+            );
+          })}
+        </Slider>
+      );
+    } else {
+      return (
+        <Slider
+          next="next-trainer"
+          prev="prev-trainer"
+          pagination="trainer-popular"
+          mobile={mobile}
+          count={4}
+        >
+          {trainerImage.map((trainer, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <CardTrainer trainer={trainer} next="next-trainer" prev="prev-trainer" />
+              </SwiperSlide>
+            );
+          })}
+        </Slider>
+      );
+    }
+  }
   return (
     <Container>
       <Title>
@@ -59,28 +98,7 @@ function PopularTrainer({ mobile }) {
             </svg>
           </SliderControlPrimary>
         </div>
-        <CardContainer>
-          {!mobile ? (
-            <Slider
-              next="next-trainer"
-              prev="prev-trainer"
-              pagination="trainer-popular"
-              mobile={mobile}
-            >
-              {trainerImage.map((trainer, index) => {
-                return (
-                  <SwiperSlide key={index}>
-                    <CardTrainer trainer={trainer} next="next-trainer" prev="prev-trainer" />
-                  </SwiperSlide>
-                );
-              })}
-            </Slider>
-          ) : (
-            trainerImage.map((trainer, index) => (
-              <CardTrainer trainer={trainer} next="next-trainer" prev="prev-trainer" />
-            ))
-          )}
-        </CardContainer>
+        <CardContainer>{renderSlider()}</CardContainer>
       </div>
       <SliderPagination id="trainer-popular" />
     </Container>

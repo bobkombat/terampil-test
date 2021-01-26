@@ -32,6 +32,14 @@ export const Container = styled.section`
     position: relative;
     margin-bottom: 8px;
   }
+
+  .overlay {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 8px;
+    overflow: auto;   
+  }
   
 `;
 
@@ -66,5 +74,10 @@ export const CategoryText = styled.a`
   color: ${props => props.selected ? '#00DEBF' : '#C4C4C4'};
   margin: 0 10px;
   cursor: pointer;
+  white-space: nowrap;
+  
+  ${mq({
+    fontSize: [null, null, null, '12px', '12px']
+  })}
 
 `

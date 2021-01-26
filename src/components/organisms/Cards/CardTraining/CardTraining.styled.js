@@ -1,10 +1,16 @@
 import styled from 'styled-components';
+import {mq} from "../../../../assets/styles/theme";
 
 export const CardTrainingStyled = styled.div`
-  width: 100%;
+  width: 95%;
   margin: 0 10px;
   flex-direction: column;
   display: flex;
+  flex-shrink: 0;
+
+  ${mq({
+    width: [null, null, null, null, '65%']
+  })}
   
   .cover-container {
     position: relative;
@@ -50,6 +56,11 @@ export const CardTrainingStyled = styled.div`
     color: #707070;
     float: left;
     text-align: left;
+
+    ${mq({
+      fontSize: [null, null, '10px'],
+      marginRight: [null, null, '4px'],
+    })}
   }
   
   .share {
@@ -70,6 +81,11 @@ export const CardTrainingStyled = styled.div`
     text-align: left;
     margin-bottom: 0;
     cursor: pointer;
+
+    ${mq({
+      fontSize: [null, null, '14px'],
+      lineHeight: [null, null, '18px']
+    })}
   }
   
   h2 {
@@ -81,6 +97,10 @@ export const CardTrainingStyled = styled.div`
     line-height: 24px;
     float: left;
     text-align: left;
+    ${mq({
+      fontSize: [null, null, '12px'],
+      lineHeight: [null, null, '14px']
+    })}
   }
   
   .row {
@@ -104,6 +124,9 @@ export const CardTrainingStyled = styled.div`
     border-radius: 50%;
     float: left;
     margin-right: 10px;
+    ${mq({
+      marginRight: [null, null, '4px'],
+    })}
   }
 `
 
@@ -120,4 +143,13 @@ export const Flag = styled.div`
   left: 8px;
   bottom: 8px;
   border-radius: 5px;
+  float: left;
+  text-align: left;
+  
+  ${mq({
+    fontSize: [null, null, '10px'],
+    padding: [null, null, '5px 4px'],
+    lineHeight: [null, null, '12px']
+  })}
+  
 `

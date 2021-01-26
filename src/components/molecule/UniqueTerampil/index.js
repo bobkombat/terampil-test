@@ -24,7 +24,7 @@ function UniqueTitle(props) {
       <Title>Master skills with in-depth learning & Discuss</Title>
       {PointUniqeTerampil.map((item, i) => {
         return (
-          <ContainerPoint>
+          <ContainerPoint key={i}>
             <Icon src={item.src} alt="logo" />
             <PointTitle>{item.message}</PointTitle>
           </ContainerPoint>

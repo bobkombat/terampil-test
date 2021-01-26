@@ -1,4 +1,3 @@
-import { mq } from 'assets/styles/theme';
 import styled from 'styled-components';
 
 export const Container = styled.section`
@@ -41,15 +40,19 @@ export const CardContainer = styled.div`
   z-index: -1;
   padding: 0 100px;
 
-  ${mq({
-    padding: ['0 100px', null, '0 60px'],
-  })}
+  @media screen and ${(props) => props.theme.breakpoints.lg} {
+    padding: 0 60px;
+  }
+
+  @media screen and ${(props) => props.theme.breakpoints.sm} {
+    padding: 0 5px;
+  }
 `;
 
 export const SliderPagination = styled.div`
   position: relative;
   text-align: center;
-  transition: 300ms opacity;
+  transition: all 300ms ease;
   transform: translate3d(0, 0, 0);
   z-index: 10;
   margin-top: 20px;
@@ -68,5 +71,18 @@ export const SliderPagination = styled.div`
   .swiper-pagination-bullet-active {
     width: 30px;
     border-radius: 20px;
+  }
+
+  @media screen and ${(props) => props.theme.breakpoints.sm} {
+    margin-top: 0px;
+
+    .swiper-pagination-bullet {
+      width: 7px;
+      height: 7px;
+    }
+
+    .swiper-pagination-bullet-active {
+      width: 20px;
+    }
   }
 `;

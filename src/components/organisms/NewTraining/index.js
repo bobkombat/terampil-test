@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
+import React from 'react';
 import { Container, Title, ContainerCard } from './styled';
-import CardNewTraining from '../Cards/Card NewTraining';
+import CardNewTraining from '../Cards/CardNewTraining';
 import Thumnail1 from '../../../assets/png/RectangleVideo1.png';
 import Thumnail2 from '../../../assets/png/RectangleVideo2.png';
 import Slider from '../../atoms/Slider/index';
@@ -49,7 +48,7 @@ const dataTraining = [
   },
 ];
 
-function NewTraining(props) {
+function NewTraining() {
   return (
     <Container>
       <Title>Kelas Baru Tiap Minggu </Title>
@@ -77,7 +76,7 @@ function NewTraining(props) {
                 <path
                   d="M1.5 17.75C1.20794 17.7506 0.924893 17.6489 0.700002 17.4625C0.573429 17.3576 0.468802 17.2287 0.392112 17.0833C0.315422 16.9378 0.268177 16.7787 0.253082 16.615C0.237987 16.4512 0.25534 16.2862 0.304145 16.1292C0.352951 15.9721 0.43225 15.8263 0.537502 15.7L6.1375 9L0.737503 2.2875C0.633671 2.15964 0.556131 2.01252 0.509341 1.8546C0.462552 1.69667 0.447435 1.53106 0.464859 1.36727C0.482283 1.20349 0.531904 1.04476 0.610871 0.900216C0.689838 0.75567 0.796595 0.628155 0.925003 0.525002C1.05434 0.411206 1.20579 0.325372 1.36987 0.272886C1.53395 0.220399 1.7071 0.202395 1.87847 0.220001C2.04984 0.237607 2.21571 0.290444 2.36569 0.375196C2.51567 0.459949 2.64651 0.574786 2.75 0.712502L8.7875 8.2125C8.97136 8.43617 9.07186 8.71672 9.07186 9.00625C9.07186 9.29578 8.97136 9.57634 8.7875 9.8L2.5375 17.3C2.41211 17.4513 2.25281 17.5709 2.07255 17.649C1.89229 17.7272 1.69614 17.7618 1.5 17.75Z"
                   fill="white"
-                  fill-opacity="0.7"
+                  fillOpacity="0.7"
                 />
               </svg>
             </SliderControlPrimary>
@@ -121,7 +120,5 @@ function NewTraining(props) {
     </Container>
   );
 }
-
-NewTraining.propTypes = {};
 
 export default NewTraining;

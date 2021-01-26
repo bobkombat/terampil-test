@@ -1,17 +1,15 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
-  /* width: 80%; */
   height: 120px;
-  /* background-color: white; */
   display: flex;
   flex-direction: column;
-  /* justify-content: flex-start; */
+
   .link {
     margin: 24px 134px 0 8px;
-    font-family: OpenSans;
+    font-family: Open Sans;
     font-size: 16px;
-    font-weight: normal;
+    font-weight: 400;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
@@ -22,7 +20,7 @@ export const Container = styled.section`
 `;
 
 export const Title = styled.h6`
-  font-family: OpenSans;
+  font-family: Open Sans;
   font-size: 16px;
   font-weight: bold;
   font-stretch: normal;
@@ -43,9 +41,9 @@ export const Title = styled.h6`
 export const Link = styled.a`
   text-decoration: none;
   margin: 24px 1px 0 0;
-  font-family: OpenSans;
+  font-family: Open Sans;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 400;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -59,7 +57,7 @@ export const Link = styled.a`
 `;
 
 export const Address = styled.p`
-  font-family: OpenSans;
+  font-family: Open Sans;
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;

@@ -1,9 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Container } from './Footer.styled';
 import { About, MobileLink, PerusahaanLink, SocialMedia } from '../../molecule/MainFooter/';
 
-function Footer(props) {
+function Footer() {
   return (
     <Container>
       <About />
@@ -13,7 +12,5 @@ function Footer(props) {
     </Container>
   );
 }
-
-Footer.propTypes = {};
 
 export default Footer;

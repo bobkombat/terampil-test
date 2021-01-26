@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import PageLayout from 'components/organisms/PageLayout';
 
 // component
@@ -17,11 +17,8 @@ import {
   NewTraining,
   Testimoni,
 } from 'components/organisms';
-import { checkMobile } from 'utils/checkMobile';
 
 export default function HomePage() {
-  const [isMobile, setIsMobile] = useState(false);
-
   // SEO metadata
   const seo = {
     title: 'Beranda',
@@ -30,23 +27,19 @@ export default function HomePage() {
     canonical: null,
   };
 
-  useEffect(() => {
-    setIsMobile(checkMobile());
-  }, []);
-
   return (
-    <PageLayout seo={seo} mobile={isMobile}>
+    <PageLayout seo={seo}>
       <TagLine />
       <VideoAdds />
       <Collaboration />
-      <PopularTrainer mobile={isMobile} />
+      <PopularTrainer />
       <UniqueValue />
       <Cooperation />
-      <PopularTraining mobile={isMobile} />
+      <PopularTraining />
       <BannerAds />
       <ForumTeraktif />
-      <NewTraining mobile={isMobile} />
-      <Testimoni mobile={isMobile} />
+      <NewTraining />
+      <Testimoni />
       <FAQ />
       <AdsTrainer />
     </PageLayout>

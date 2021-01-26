@@ -1,10 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Search from './Input.styled';
 import SearchIcon from '../../../assets/png/Search.png';
 
-function InputComponent(props) {
-  const { ...rest } = props;
+function InputComponent() {
   return (
     <Search>
       <img src={SearchIcon} alt="search" />

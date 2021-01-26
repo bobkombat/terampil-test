@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { mq } from '../../../assets/styles/theme';
-import { globalTheme } from '../../../assets/styles/theme';
 
 export const Section = styled.section`
   position: relative;
@@ -112,7 +111,7 @@ export const AdsTrainerStyled = styled.section`
 
     &:hover {
       background-color: #000004;
-      color: ${globalTheme.color.primary};
+      color: ${(props) => props.theme.color.primary};
     }
 
     ${mq({
