@@ -3,18 +3,19 @@ import PageLayout from 'components/organisms/PageLayout';
 
 // component
 import {
-  VideoAdds,
-  TagLine,
-  Collaboration,
-  UniqueValue,
-  PopularTrainer,
-  ForumTeraktif,
-  FAQ,
-  AdsTrainer,
-  Cooperation,
-  BannerAds,
+    VideoAdds,
+    TagLine,
+    Collaboration,
+    UniqueValue,
+    PopularTrainer,
+    ForumTeraktif,
+    FAQ,
+    AdsTrainer,
+    Cooperation,
+    BannerAds, PopularTraining, NewTraining,
 } from 'components/organisms';
 import { checkMobile } from 'utils/checkMobile';
+import {Testimoni} from "../../components/molecule/MainTestimoni/styled";
 
 export default function HomePage() {
   const [isMobile, setIsMobile] = useState(false);
@@ -39,11 +40,11 @@ export default function HomePage() {
       <PopularTrainer mobile={isMobile} />
       <UniqueValue />
       <Cooperation />
-      {/* <PopularTraining mobile={isMobile} /> */}
+      <PopularTraining  />
       <BannerAds />
       <ForumTeraktif />
-      {/* <NewTraining mobile={isMobile} /> */}
-      {/* <Testimoni mobile={isMobile} /> */}
+      <NewTraining mobile={isMobile} />
+      <Testimoni mobile={isMobile} />
       <FAQ />
       <AdsTrainer />
     </PageLayout>

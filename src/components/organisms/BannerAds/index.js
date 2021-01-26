@@ -3,7 +3,7 @@ import { Container, Content } from './BannerAds.styled';
 import logo from '../../../assets/png/terampil.png';
 import Button from '../../atoms/Button';
 
-export const BannerAds = () => {
+const BannerAds = () => {
     return (
         <Container>
             <div className='side'>
@@ -24,3 +24,5 @@ export const BannerAds = () => {
         </Container>
     )
 }
+
+export default BannerAds
