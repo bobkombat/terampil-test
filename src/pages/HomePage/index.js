@@ -1,20 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import PageLayout from 'components/organisms/PageLayout';
 
-import { TagLine } from '../../components/organisms/TagLine';
-import { AdsTrainer } from '../../components/organisms/AdsTrainer';
-import Collaboration from 'components/organisms/Collaboration';
-import PopularTrainer from 'components/organisms/PopularTrainer';
-import UniqueValue from 'components/organisms/UniqueValue';
-import Cooperation from 'components/organisms/Cooperation';
-import Testimoni from 'components/organisms/Testimoni';
-import NewTraining from 'components/organisms/NewTraining';
-import PopularTraining from 'components/organisms/PopularTraining';
-import { BannerAds } from '../../components/organisms/BannerAds';
-import FAQ from '../../components/organisms/FAQ';
-import ForumTeraktif from 'components/organisms/ForumTeraktif';
-
-import VideoAdds from 'components/organisms/VideoAdds';
+// component
+import {
+  VideoAdds,
+  TagLine,
+  Collaboration,
+  UniqueValue,
+  PopularTrainer,
+  ForumTeraktif,
+  FAQ,
+  AdsTrainer,
+  Cooperation,
+  BannerAds,
+} from 'components/organisms';
 import { checkMobile } from 'utils/checkMobile';
 
 export default function HomePage() {

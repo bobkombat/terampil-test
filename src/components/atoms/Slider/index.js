@@ -41,7 +41,11 @@ const Slider = (props) => {
         slidesPerGroup={count}
         draggable={false}
         speed={700}
+<<<<<<< HEAD
         allowTouchMove={mobile}
+=======
+        allowTouchMove={true}
+>>>>>>> dcb8f89d6e5443ea4322dcb6b77addad4c7c8afa
       >
         {children}
         <div slot="container-start"></div>
