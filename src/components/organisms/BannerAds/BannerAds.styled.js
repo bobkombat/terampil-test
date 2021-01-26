@@ -14,10 +14,22 @@ export const Container = styled.section`
     align-items: center;
   }
   
-  .small {
+  .img-small {
     width: 44px;
     height: 66px;
     margin-top: -80px;
+
+    ${mq({
+      width: [null, null, null, null, '22px'],
+      height: [null, null, null, null, '33px']
+    })}
+  }
+  
+  .img-large {
+    ${mq({
+      width: [null, null, null, null, '44px'],
+      height: [null, null, null, null, '66px']
+    })}
   }
 `
 
@@ -59,7 +71,8 @@ export const Content = styled.div`
     text-align: left;
     
     ${mq({
-      fontSize: [null, null, null, null, '16px']
+      fontSize: [null, null, null, null, '16px'],
+      textAlign: [null, null, null, null, 'center']
     })}
   }
 
@@ -77,7 +90,8 @@ export const Content = styled.div`
 
     ${mq({
       fontSize: [null, null, null, null, '14px'],
-      margin: [null, null, null, null, '0']
+      margin: [null, null, null, null, '0'],
+      textAlign: [null, null, null, null, 'center']
     })}
   }
 `
